@@ -124,6 +124,37 @@ def _extract_key_metric(talking_points: list) -> str:
     return ""
 
 
+def _label_content_capacity(layout_entry: Optional[dict]) -> int:
+    """Return how many LABEL zones are explicitly marked as writable content.
+
+    LABEL zones are decorative by default. We only write into LABEL zones when
+    the selected layout_entry provides an explicit signal that a given LABEL is
+    content-bearing.
+    """
+    if not layout_entry:
+        return 0
+
+    if layout_entry.get("allow_label_write") is True:
+        return 10**9  # effectively unlimited for current slide
+
+    text_zones = layout_entry.get("text_zones", [])
+    if not isinstance(text_zones, list):
+        return 0
+
+    writable = 0
+    for zone in text_zones:
+        if not isinstance(zone, dict):
+            continue
+        if zone.get("role") != "LABEL":
+            continue
+        if any(
+            zone.get(flag) is True
+            for flag in ("is_content", "content", "writable", "replace", "allow_write")
+        ):
+            writable += 1
+    return writable
+
+
 # ---------------------------------------------------------------------------
 # Slide duplication
 # ---------------------------------------------------------------------------
@@ -797,9 +828,9 @@ class StencilRenderer:
         title_done     = False
         subtitle_done  = False
         body_done      = False
-        highlight_done = False
         caption_idx    = 0
         label_idx      = 0
+        writable_labels = _label_content_capacity(layout_entry)
 
         takeaway = slide_data.talking_points[0] if slide_data.talking_points else slide_data.title
 
@@ -807,29 +838,23 @@ class StencilRenderer:
             shape = zone["shape"]
             role  = zone["role"]
 
-            # HIGHLIGHT: replace with extracted key metric (first numeric value found)
+            # HIGHLIGHT is decorative by default; keep original stencil text.
             if role == "HIGHLIGHT":
-                if not highlight_done:
-                    metric = _extract_key_metric(slide_data.talking_points)
-                    if metric:
+                continue
+
+            # LABEL is decorative by default.
+            # Only write when the layout explicitly marks LABEL zone(s) as content.
+            if role == "LABEL":
+                if label_idx < writable_labels:
+                    pts = slide_data.talking_points
+                    if label_idx < len(pts):
                         try:
-                            replace_text_preserving_format(shape.text_frame, metric, max_chars=30)
-                            highlight_done = True
+                            replace_text_preserving_format(
+                                shape.text_frame, pts[label_idx][:60], max_chars=60
+                            )
                         except Exception:
                             pass
-                continue  # always skip remaining HIGHLIGHT zones
-
-            # LABEL: replace with short sequential talking point content
-            if role == "LABEL":
-                pts = slide_data.talking_points
-                if label_idx < len(pts):
-                    try:
-                        replace_text_preserving_format(
-                            shape.text_frame, pts[label_idx][:60], max_chars=60
-                        )
-                    except Exception:
-                        pass
-                    label_idx += 1
+                label_idx += 1
                 continue
 
             try:
