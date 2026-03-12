@@ -2,9 +2,10 @@ import asyncio
 import io
 import logging
 import tempfile
+import uuid
 from pathlib import Path
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 from starlette.responses import StreamingResponse
 
 from models.schemas import GeneratePptxRequest
@@ -18,7 +19,7 @@ router = APIRouter()
 
 
 @router.post("/generate-pptx")
-async def create_pptx(request: GeneratePptxRequest):
+async def create_pptx(request: GeneratePptxRequest, http_request: Request):
     try:
         validate_template_id(request.template_id, get_known_template_ids())
     except SecurityError:
@@ -32,6 +33,8 @@ async def create_pptx(request: GeneratePptxRequest):
     if template_meta is None:
         raise HTTPException(status_code=404, detail="Template not found")
 
+    request_id = http_request.headers.get("x-request-id") or str(uuid.uuid4())
+
     try:
         buffer = await asyncio.wait_for(
             asyncio.to_thread(
@@ -39,6 +42,7 @@ async def create_pptx(request: GeneratePptxRequest):
                 request.storytelling,
                 str(template_path),
                 template_meta,
+                request_id,
             ),
             timeout=30,
         )
@@ -61,6 +65,7 @@ def _generate_thumbnail_sync(
     storytelling,
     template_path: str,
     template_meta,
+    request_id: str | None = None,
 ) -> bytes:
     """
     Blocking helper: generate PPTX → thumbnail JPEG grid.
@@ -75,7 +80,7 @@ def _generate_thumbnail_sync(
     from scripts.thumbnail import generate_thumbnail_grid
 
     # Generate the PPTX first
-    pptx_buffer = generate_pptx(storytelling, template_path, template_meta)
+    pptx_buffer = generate_pptx(storytelling, template_path, template_meta, request_id=request_id)
 
     # Write to a temp file so thumbnail.py can read it
     with tempfile.TemporaryDirectory() as tmp:
@@ -94,7 +99,7 @@ def _generate_thumbnail_sync(
 
 
 @router.post("/generate-pptx/thumbnail")
-async def create_pptx_thumbnail(request: GeneratePptxRequest):
+async def create_pptx_thumbnail(request: GeneratePptxRequest, http_request: Request):
     """
     Generate a JPEG thumbnail grid of the presentation slides.
 
@@ -120,6 +125,8 @@ async def create_pptx_thumbnail(request: GeneratePptxRequest):
     if template_meta is None:
         raise HTTPException(status_code=404, detail="Template not found")
 
+    request_id = http_request.headers.get("x-request-id") or str(uuid.uuid4())
+
     try:
         jpeg_bytes = await asyncio.wait_for(
             asyncio.to_thread(
@@ -127,6 +134,7 @@ async def create_pptx_thumbnail(request: GeneratePptxRequest):
                 request.storytelling,
                 str(template_path),
                 template_meta,
+                request_id,
             ),
             timeout=120,  # LibreOffice conversion can be slow
         )

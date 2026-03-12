@@ -34,6 +34,8 @@ The public entry-point is generate_pptx().
 import io
 import logging
 import os
+import uuid
+from dataclasses import dataclass
 
 from pptx import Presentation
 from pptx.util import Inches, Pt, Emu
@@ -51,6 +53,41 @@ def _hex_to_rgb(hex_color: str) -> tuple[int, int, int]:
     return (int(hex_color[0:2], 16), int(hex_color[2:4], 16), int(hex_color[4:6], 16))
 
 logger = logging.getLogger(__name__)
+
+
+@dataclass
+class RenderPipelineResult:
+    """Internal metadata about renderer decisions for observability/debug."""
+
+    renderer_used: str
+    fallback_chain: list[dict[str, str]]
+    request_id: str
+
+
+class RenderedPptxBuffer(io.BytesIO):
+    """BytesIO response that carries pipeline metadata for internal consumers."""
+
+    def __init__(self, content: bytes, metadata: RenderPipelineResult):
+        super().__init__(content)
+        self.metadata = metadata
+
+
+def _attach_render_metadata(
+    buffer: io.BytesIO,
+    *,
+    renderer_used: str,
+    fallback_chain: list[dict[str, str]],
+    request_id: str,
+) -> RenderedPptxBuffer:
+    """Return a BytesIO-compatible response with renderer metadata attached."""
+    return RenderedPptxBuffer(
+        buffer.getvalue(),
+        RenderPipelineResult(
+            renderer_used=renderer_used,
+            fallback_chain=fallback_chain,
+            request_id=request_id,
+        ),
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -576,6 +613,7 @@ def generate_pptx(
     outline: StorytellingOutline,
     template_path: str,
     template_meta: TemplateInfo,
+    request_id: str | None = None,
 ) -> io.BytesIO:
     """
     Generate a PPTX from the storytelling outline.
@@ -601,7 +639,14 @@ def generate_pptx(
     io.BytesIO
         In-memory PPTX buffer, seeked to position 0.
     """
+    request_id = request_id or str(uuid.uuid4())
     renderer = _get_renderer_setting()
+    fallback_chain: list[dict[str, str]] = []
+
+    logger.info(
+        "Starting PPTX generation pipeline",
+        extra={"request_id": request_id, "renderer_preference": renderer},
+    )
 
     # --- Resolve stencil + catalog paths (shared by auto and stencil modes) ---
     stencil_path = _find_stencil_file(template_path)
@@ -618,20 +663,47 @@ def generate_pptx(
     # Forced single-renderer modes
     # -----------------------------------------------------------------------
     if renderer == "xml":
-        logger.info("PPTX_RENDERER=xml — using XML renderer (no fallback).")
-        return _generate_pptx_xml_path(outline, template_path, template_meta)
+        logger.info(
+            "Using forced renderer",
+            extra={"request_id": request_id, "renderer_used": "xml", "fallback_chain": fallback_chain},
+        )
+        buf = _generate_pptx_xml_path(outline, template_path, template_meta)
+        return _attach_render_metadata(
+            buf,
+            renderer_used="xml",
+            fallback_chain=fallback_chain,
+            request_id=request_id,
+        )
 
     if renderer == "stencil":
-        logger.info("PPTX_RENDERER=stencil — using stencil renderer (no fallback).")
+        logger.info(
+            "Using forced renderer",
+            extra={"request_id": request_id, "renderer_used": "stencil", "fallback_chain": fallback_chain},
+        )
         if not stencil_path or not os.path.isfile(catalog_path):
             raise RuntimeError(
                 "PPTX_RENDERER=stencil but stencil file or catalog not found."
             )
-        return _generate_pptx_stencil(outline, stencil_path, catalog_path, template_meta)
+        buf = _generate_pptx_stencil(outline, stencil_path, catalog_path, template_meta)
+        return _attach_render_metadata(
+            buf,
+            renderer_used="stencil",
+            fallback_chain=fallback_chain,
+            request_id=request_id,
+        )
 
     if renderer == "programmatic":
-        logger.info("PPTX_RENDERER=programmatic — using programmatic renderer (no fallback).")
-        return _generate_pptx_programmatic(outline, template_path, template_meta)
+        logger.info(
+            "Using forced renderer",
+            extra={"request_id": request_id, "renderer_used": "programmatic", "fallback_chain": fallback_chain},
+        )
+        buf = _generate_pptx_programmatic(outline, template_path, template_meta)
+        return _attach_render_metadata(
+            buf,
+            renderer_used="programmatic",
+            fallback_chain=fallback_chain,
+            request_id=request_id,
+        )
 
     # -----------------------------------------------------------------------
     # Auto mode: xml → stencil → programmatic
@@ -639,33 +711,96 @@ def generate_pptx(
 
     # --- 1. XML-based (new preferred path) ---
     try:
-        logger.info("Auto mode: trying XML renderer.")
+        logger.info("Trying renderer", extra={"request_id": request_id, "renderer_candidate": "xml"})
         buf = _generate_pptx_xml_path(outline, template_path, template_meta)
         if buf.getbuffer().nbytes > 50 * 1024 * 1024:
             raise ValueError("Generated PPTX exceeds 50 MB size limit")
-        logger.info("XML renderer succeeded.")
-        return buf
+        logger.info(
+            "Renderer selected",
+            extra={"request_id": request_id, "renderer_used": "xml", "fallback_chain": fallback_chain},
+        )
+        return _attach_render_metadata(
+            buf,
+            renderer_used="xml",
+            fallback_chain=fallback_chain,
+            request_id=request_id,
+        )
     except Exception as exc:
-        logger.warning("XML renderer failed (%s). Trying stencil renderer.", exc)
+        fallback_reason = f"xml_failed:{exc.__class__.__name__}:{exc}"
+        fallback_chain.append({"from": "xml", "to": "stencil", "reason": fallback_reason})
+        logger.warning(
+            "Renderer fallback triggered",
+            extra={
+                "request_id": request_id,
+                "fallback_from": "xml",
+                "fallback_to": "stencil",
+                "fallback_reason": fallback_reason,
+                "fallback_chain": fallback_chain,
+            },
+            exc_info=True,
+        )
 
     # --- 2. Stencil-based ---
     if stencil_path and os.path.isfile(catalog_path):
         try:
-            logger.info("Using stencil rendering: %s", stencil_path)
+            logger.info(
+                "Trying renderer",
+                extra={"request_id": request_id, "renderer_candidate": "stencil", "stencil_path": stencil_path},
+            )
             buf = _generate_pptx_stencil(outline, stencil_path, catalog_path, template_meta)
             if buf.getbuffer().nbytes > 50 * 1024 * 1024:
                 raise ValueError("Generated PPTX exceeds 50 MB size limit")
-            return buf
+            logger.info(
+                "Renderer selected",
+                extra={"request_id": request_id, "renderer_used": "stencil", "fallback_chain": fallback_chain},
+            )
+            return _attach_render_metadata(
+                buf,
+                renderer_used="stencil",
+                fallback_chain=fallback_chain,
+                request_id=request_id,
+            )
         except Exception as exc:
+            fallback_reason = f"stencil_failed:{exc.__class__.__name__}:{exc}"
+            fallback_chain.append({"from": "stencil", "to": "programmatic", "reason": fallback_reason})
             logger.warning(
-                "Stencil rendering failed (%s). Falling back to programmatic.", exc
+                "Renderer fallback triggered",
+                extra={
+                    "request_id": request_id,
+                    "fallback_from": "stencil",
+                    "fallback_to": "programmatic",
+                    "fallback_reason": fallback_reason,
+                    "fallback_chain": fallback_chain,
+                },
+                exc_info=True,
             )
     else:
+        fallback_reason = (
+            f"stencil_unavailable:stencil_exists={bool(stencil_path)}:catalog_exists={os.path.isfile(catalog_path)}"
+        )
+        fallback_chain.append({"from": "stencil", "to": "programmatic", "reason": fallback_reason})
         logger.debug(
-            "Stencil path skipped: stencil_path=%s catalog_exists=%s",
-            stencil_path, os.path.isfile(catalog_path),
+            "Renderer fallback triggered",
+            extra={
+                "request_id": request_id,
+                "fallback_from": "stencil",
+                "fallback_to": "programmatic",
+                "fallback_reason": fallback_reason,
+                "fallback_chain": fallback_chain,
+                "stencil_path": stencil_path,
+                "catalog_exists": os.path.isfile(catalog_path),
+            },
         )
 
     # --- 3. Programmatic (always works) ---
-    logger.info("Using programmatic rendering.")
-    return _generate_pptx_programmatic(outline, template_path, template_meta)
+    logger.info(
+        "Renderer selected",
+        extra={"request_id": request_id, "renderer_used": "programmatic", "fallback_chain": fallback_chain},
+    )
+    buf = _generate_pptx_programmatic(outline, template_path, template_meta)
+    return _attach_render_metadata(
+        buf,
+        renderer_used="programmatic",
+        fallback_chain=fallback_chain,
+        request_id=request_id,
+    )
