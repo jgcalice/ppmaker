@@ -665,11 +665,17 @@ class StencilRenderer:
         self._stencil_path  = stencil_pptx_path
         self._catalog_dict  = catalog
         self._brand_tokens  = brand_tokens
+        self._catalog_entries = catalog.get("catalog", [])
+
+        self._entries_by_use_for: dict[str, list[dict]] = {}
+        for entry in self._catalog_entries:
+            for tag in entry.get("use_for", []):
+                self._entries_by_use_for.setdefault(tag, []).append(entry)
 
         # Build layout_id → catalog entry index for fast lookup
         self._entry_by_id: dict[str, dict] = {
             e["layout_id"]: e
-            for e in catalog.get("catalog", [])
+            for e in self._catalog_entries
         }
 
     # ------------------------------------------------------------------
@@ -705,12 +711,16 @@ class StencilRenderer:
         n_original = len(prs.slides)
         logger.info("Stencil loaded: %d original slides.", n_original)
 
+        recent_stencil_indices: list[int] = []
+
         for slide_data in outline.slides:
             layout_hint = slide_data.layout
 
             # Resolve stencil index
             stencil_idx = None
             layout_entry: Optional[dict] = None
+
+            selection_source = "fallback-map"
 
             if visual_director is not None:
                 slide_content = {
@@ -727,19 +737,47 @@ class StencilRenderer:
                     "slide_index":  slide_data.index,
                     "total_slides": outline.total_slides,
                 }
-                layout_id   = visual_director.select_layout(slide_content, deck_context)
-                stencil_idx = visual_director.get_stencil_index(layout_id)
-                layout_entry = visual_director.get_catalog_entry(layout_id)
+                try:
+                    layout_id   = visual_director.select_layout(slide_content, deck_context)
+                    stencil_idx = visual_director.get_stencil_index(layout_id)
+                    layout_entry = visual_director.get_catalog_entry(layout_id)
+                    if stencil_idx is not None and layout_entry is not None:
+                        selection_source = "catalog"
+                    else:
+                        stencil_idx = None
+                        layout_entry = None
+                except Exception as exc:
+                    logger.warning(
+                        "VisualDirector selection failed for slide %d (%s): %s",
+                        slide_data.index,
+                        layout_hint,
+                        exc,
+                    )
+
+            if stencil_idx is None:
+                stencil_idx, layout_entry = self._select_by_content_heuristic(slide_data)
+                if stencil_idx is not None:
+                    selection_source = "heuristic-fallback"
 
             if stencil_idx is None:
                 stencil_idx = FALLBACK_STENCIL_MAP.get(layout_hint, 1)
+                selection_source = "fallback-map"
+
+            stencil_idx = self._avoid_stencil_repetition(
+                stencil_idx,
+                slide_data,
+                recent_stencil_indices,
+                n_original,
+            )
 
             # Guard: clamp to valid range
             stencil_idx = max(0, min(stencil_idx, n_original - 1))
+            recent_stencil_indices.append(stencil_idx)
 
-            logger.debug(
-                "Slide %d (%s) → stencil idx %d",
+            logger.info(
+                "Slide %d (%s) → stencil idx %d [source=%s]",
                 slide_data.index, layout_hint, stencil_idx,
+                selection_source,
             )
 
             try:
@@ -771,6 +809,70 @@ class StencilRenderer:
         prs.save(buf)
         buf.seek(0)
         return buf
+
+    def _select_by_content_heuristic(self, slide_data) -> tuple[Optional[int], Optional[dict]]:
+        """Select stencil by content heuristics before hard fallback map."""
+        bullets = slide_data.talking_points or []
+        n_bullets = len(bullets)
+        total_chars = len(slide_data.title or "") + sum(len(b) for b in bullets)
+        density = total_chars / max(1, n_bullets)
+
+        tags: list[str] = [slide_data.layout]
+        if slide_data.has_placeholder:
+            tags.extend(["chart-placeholder", "dashboard"])
+        elif n_bullets >= 5:
+            tags.extend(["cards", "two-column", "content"])
+        elif n_bullets <= 2 and density < 110:
+            tags.extend(["hero", "title", "image-text"])
+        else:
+            tags.extend(["content", "two-column", "image-text"])
+        if density > 180:
+            tags.append("two-column")
+        tags.append("content")
+
+        seen_ids: set[str] = set()
+        for tag in tags:
+            for entry in self._entries_by_use_for.get(tag, []):
+                layout_id = entry.get("layout_id")
+                if layout_id in seen_ids:
+                    continue
+                seen_ids.add(layout_id)
+                idx = entry.get("slide_index")
+                if isinstance(idx, int):
+                    return idx, entry
+
+        for tag in tags:
+            if tag in FALLBACK_STENCIL_MAP:
+                return FALLBACK_STENCIL_MAP[tag], None
+
+        return None, None
+
+    def _avoid_stencil_repetition(
+        self,
+        stencil_idx: int,
+        slide_data,
+        recent_stencil_indices: list[int],
+        n_original: int,
+    ) -> int:
+        """Avoid using the same stencil in 3 consecutive slides."""
+        if len(recent_stencil_indices) < 2:
+            return stencil_idx
+        if not (recent_stencil_indices[-1] == recent_stencil_indices[-2] == stencil_idx):
+            return stencil_idx
+
+        alt_idx, _ = self._select_by_content_heuristic(slide_data)
+        if alt_idx is None or alt_idx == stencil_idx:
+            alt_idx = FALLBACK_STENCIL_MAP.get("content", 1)
+        if alt_idx == stencil_idx:
+            alt_idx = (stencil_idx + 1) % max(1, n_original)
+
+        logger.info(
+            "Adjusted stencil repetition for slide %d: %d -> %d",
+            slide_data.index,
+            stencil_idx,
+            alt_idx,
+        )
+        return alt_idx
 
     # ------------------------------------------------------------------
     # Content replacement

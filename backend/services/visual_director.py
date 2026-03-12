@@ -201,12 +201,20 @@ class VisualDirector:
         if not candidates:
             candidates = self._use_for_index.get("content", [])
 
+        # Robust fallback: always prefer layouts with compatible TITLE + BODY zones
+        if not candidates:
+            candidates = [e for e in self._catalog if self._has_required_text_roles(e)]
+        else:
+            compatible = [e for e in candidates if self._has_required_text_roles(e)]
+            if compatible:
+                candidates = compatible
+
         if not candidates:
             # Absolute fallback: first slide in catalog
             return self._catalog[0]["layout_id"] if self._catalog else "SLIDE02"
 
         # Score candidates by feature relevance
-        best = self._score_candidates(candidates, slide_content)
+        best = self._pick_with_variety(candidates, slide_content, deck_context)
         return best["layout_id"]
 
     def generate_spec(
@@ -301,6 +309,78 @@ class VisualDirector:
 
         scored.sort(key=lambda t: t[0], reverse=True)
         return scored[0][1]
+
+    def _score_candidates_ranked(self, candidates: list[dict], slide_content: dict) -> list[dict]:
+        """Return candidates sorted by score desc (used for variety selection)."""
+        hint = slide_content.get("layout_hint", "content")
+        n_bullets = len(slide_content.get("bullets", []))
+        has_ph = slide_content.get("has_placeholder", False)
+
+        scored: list[tuple[int, dict]] = []
+        for entry in candidates:
+            feat = entry.get("features", {})
+            score = 0
+
+            if has_ph and feat.get("has_chart"):
+                score += 3
+            if hint in ("hero", "title") and feat.get("hero_images_circle", 0) > 0:
+                score += 2
+            if 4 <= n_bullets <= 6 and feat.get("cards_roundrect", 0) >= 4:
+                score += 2
+            td = feat.get("text_density", 0)
+            if 2 <= td <= 6 and 1 <= n_bullets <= 5:
+                score += 1
+            if td > 8 and n_bullets <= 2:
+                score -= 1
+
+            image_zones = entry.get("image_zones", [])
+            hero_rects = sum(1 for z in image_zones if z.get("role") == "HERO_RECT")
+            deco_count = sum(1 for z in image_zones if z.get("role") == "DECO")
+            score += min(hero_rects * 2, 8)
+            score += min(deco_count // 3, 2)
+
+            n_zones = len(entry.get("text_zones", []))
+            if hint in ("content", "two-column", "image-text"):
+                if n_zones <= 5 and hero_rects == 0:
+                    score += 1
+                if n_zones > 10 and hero_rects == 0:
+                    score -= 2
+
+            # Guarantee required zones are favored in fallback situations
+            if self._has_required_text_roles(entry):
+                score += 1
+
+            scored.append((score, entry))
+
+        scored.sort(key=lambda t: t[0], reverse=True)
+        return [entry for _, entry in scored]
+
+    def _pick_with_variety(self, candidates: list[dict], slide_content: dict, deck_context: dict) -> dict:
+        """Pick best layout, increasing variety for long decks."""
+        ranked = self._score_candidates_ranked(candidates, slide_content)
+        if not ranked:
+            return self._score_candidates(candidates, slide_content)
+
+        total_slides = int(deck_context.get("total_slides", 0) or 0)
+        slide_index = int(deck_context.get("slide_index", 1) or 1)
+        if total_slides < 10 or len(ranked) == 1:
+            return ranked[0]
+
+        pool_size = min(4, len(ranked))
+        pool = ranked[:pool_size]
+        pick_idx = (slide_index - 1) % pool_size
+        return pool[pick_idx]
+
+    def _has_required_text_roles(self, entry: dict) -> bool:
+        """Check if layout has both TITLE and BODY-compatible text zones."""
+        zones = entry.get("text_zones", [])
+        if not zones:
+            return False
+
+        roles = {str(z.get("role", "")).upper() for z in zones}
+        has_title = "TITLE" in roles or "SUBTITLE" in roles
+        has_body = "BODY" in roles or "CAPTION" in roles
+        return has_title and has_body
 
     # ------------------------------------------------------------------
     # LLM path
