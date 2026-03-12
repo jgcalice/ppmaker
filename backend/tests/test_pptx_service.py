@@ -199,3 +199,99 @@ def test_generate_pptx_renderer_auto_succeeds(
     assert buffer.getbuffer().nbytes > 0, "Buffer must not be empty"
     prs = PptxPresentation(buffer)
     assert len(prs.slides) == sample_outline_model.total_slides
+
+
+
+def test_replace_slide_content_keeps_label_unchanged_by_default(monkeypatch):
+    """Stencil flow must preserve decorative LABEL zones unless explicitly writable."""
+    from services.render_from_template import StencilRenderer
+    from models.schemas import SlideOutline
+
+    class _TF:
+        def __init__(self, text):
+            self.text = text
+
+    class _Shape:
+        def __init__(self, text):
+            self.text_frame = _TF(text)
+
+    label_shape = _Shape("01")
+    title_shape = _Shape("Template title")
+
+    zones = [
+        {"shape": label_shape, "role": "LABEL"},
+        {"shape": title_shape, "role": "TITLE"},
+    ]
+
+    monkeypatch.setattr("services.render_from_template.classify_text_zones", lambda slide: zones)
+
+    writes = []
+
+    def _fake_replace_text(tf, new_text, max_chars=500):
+        writes.append(new_text)
+        tf.text = new_text
+
+    monkeypatch.setattr("services.render_from_template.replace_text_preserving_format", _fake_replace_text)
+
+    renderer = StencilRenderer("dummy.pptx", {"catalog": []}, {})
+    slide_data = SlideOutline(
+        index=0,
+        layout="content",
+        title="Updated title",
+        talking_points=["First point", "Second point"],
+        has_placeholder=False,
+        placeholder_hint="",
+    )
+
+    renderer._replace_slide_content(slide=object(), slide_data=slide_data, layout_entry=None)
+
+    assert label_shape.text_frame.text == "01"
+    assert title_shape.text_frame.text == "Updated title"
+    assert "First point" not in writes
+
+
+def test_replace_slide_content_keeps_highlight_unchanged(monkeypatch):
+    """HIGHLIGHT zones are decorative in default stencil replacement."""
+    from services.render_from_template import StencilRenderer
+    from models.schemas import SlideOutline
+
+    class _TF:
+        def __init__(self, text):
+            self.text = text
+
+    class _Shape:
+        def __init__(self, text):
+            self.text_frame = _TF(text)
+
+    highlight_shape = _Shape("99%")
+    title_shape = _Shape("Template title")
+    zones = [
+        {"shape": highlight_shape, "role": "HIGHLIGHT"},
+        {"shape": title_shape, "role": "TITLE"},
+    ]
+
+    monkeypatch.setattr("services.render_from_template.classify_text_zones", lambda slide: zones)
+
+    writes = []
+
+    def _fake_replace_text(tf, new_text, max_chars=500):
+        writes.append(new_text)
+        tf.text = new_text
+
+    monkeypatch.setattr("services.render_from_template.replace_text_preserving_format", _fake_replace_text)
+
+    renderer = StencilRenderer("dummy.pptx", {"catalog": []}, {})
+    slide_data = SlideOutline(
+        index=0,
+        layout="content",
+        title="Updated title",
+        talking_points=["Volume +12%", "Second point"],
+        has_placeholder=False,
+        placeholder_hint="",
+    )
+
+    renderer._replace_slide_content(slide=object(), slide_data=slide_data, layout_entry=None)
+
+    assert highlight_shape.text_frame.text == "99%"
+    assert title_shape.text_frame.text == "Updated title"
+    assert "+12%" not in writes
