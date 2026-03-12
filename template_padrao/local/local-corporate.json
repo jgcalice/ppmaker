@@ -1,0 +1,15 @@
+{
+  "id": "local-corporate",
+  "name": "Corporativo Local (AB InBev)",
+  "scope": "local",
+  "palette": {
+    "primary": "#0766FF",
+    "secondary": "#00328D",
+    "accent": "#FFA41B",
+    "background": "#FFFFFF",
+    "text": "#00328D"
+  },
+  "layouts": ["title", "content", "two-column", "chart-placeholder", "image-text", "closing"],
+  "font_title": "Avantt",
+  "font_body": "Avantt"
+}

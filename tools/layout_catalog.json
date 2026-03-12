@@ -1,0 +1,8438 @@
+{
+  "generated_at": "2026-03-06T18:38:52.724009+00:00",
+  "slide_dimensions": {
+    "width_in": 13.33,
+    "height_in": 7.5
+  },
+  "catalog": [
+    {
+      "layout_id": "SLIDE01",
+      "source_file": "ambev.pptx",
+      "slide_index": 0,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 0,
+        "img_count": 0
+      },
+      "text_zones": [],
+      "image_zones": [],
+      "use_for": [
+        "title",
+        "section",
+        "closing"
+      ]
+    },
+    {
+      "layout_id": "SLIDE02",
+      "source_file": "ambev.pptx",
+      "slide_index": 1,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 4
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            0.305,
+            4.42,
+            7.293,
+            1.197
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            0.305,
+            5.31,
+            8.75,
+            2.767
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            0.347,
+            6.585,
+            9.538,
+            0.503
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "BACKGROUND",
+          "bounds": [
+            0.0,
+            0.0,
+            13.333,
+            7.5
+          ],
+          "crop": "full",
+          "is_background": true
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "HERO_RECT",
+          "bounds": [
+            9.148,
+            2.351,
+            3.94,
+            4.485
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "DECO",
+          "bounds": [
+            12.525,
+            6.721,
+            0.634,
+            0.634
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE03",
+      "source_file": "ambev.pptx",
+      "slide_index": 2,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 3
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            6.509,
+            2.141,
+            7.268,
+            1.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            6.905,
+            2.913,
+            6.865,
+            2.017
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "IPSUM"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            6.985,
+            4.616,
+            6.793,
+            0.503
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "BACKGROUND",
+          "bounds": [
+            0.0,
+            0.0,
+            13.333,
+            7.5
+          ],
+          "crop": "full",
+          "is_background": true
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            12.525,
+            6.721,
+            0.634,
+            0.634
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE04",
+      "source_file": "ambev.pptx",
+      "slide_index": 3,
+      "layout_name": "1_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 3
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            6.243,
+            2.204,
+            7.268,
+            1.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            6.639,
+            2.976,
+            6.865,
+            2.017
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "IPSUM"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            6.719,
+            4.679,
+            6.793,
+            0.503
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "HERO_RECT",
+          "bounds": [
+            -0.797,
+            0.401,
+            6.399,
+            6.399
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "HERO_RECT",
+          "bounds": [
+            3.764,
+            4.244,
+            2.644,
+            3.011
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE05",
+      "source_file": "ambev.pptx",
+      "slide_index": 4,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 1
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            0.993,
+            2.72,
+            7.268,
+            1.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            0.993,
+            3.477,
+            6.865,
+            2.017
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "IPSUM"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            0.993,
+            6.478,
+            6.793,
+            0.503
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            4.441,
+            0.86,
+            2.538,
+            2.89
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE06",
+      "source_file": "ambev.pptx",
+      "slide_index": 5,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 11,
+        "img_count": 5
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            8.297,
+            0.854,
+            4.518,
+            1.197
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "IPSUM"
+        },
+        {
+          "zone_id": "ZONE_6",
+          "role": "LABEL",
+          "bounds": [
+            8.297,
+            2.024,
+            1.138,
+            0.933
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "01"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            9.271,
+            2.202,
+            5.044,
+            0.686
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM Lorem ipsum dolor sit amet"
+        },
+        {
+          "zone_id": "ZONE_7",
+          "role": "LABEL",
+          "bounds": [
+            8.297,
+            2.962,
+            1.138,
+            0.933
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "02"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            9.271,
+            3.155,
+            5.044,
+            0.686
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM Lorem ipsum dolor sit amet"
+        },
+        {
+          "zone_id": "ZONE_8",
+          "role": "LABEL",
+          "bounds": [
+            8.297,
+            3.899,
+            1.138,
+            0.933
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "03"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "CAPTION",
+          "bounds": [
+            9.271,
+            4.092,
+            5.044,
+            0.686
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM Lorem ipsum dolor sit amet"
+        },
+        {
+          "zone_id": "ZONE_9",
+          "role": "LABEL",
+          "bounds": [
+            8.297,
+            4.821,
+            1.138,
+            0.933
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "04"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "CAPTION",
+          "bounds": [
+            9.271,
+            5.03,
+            5.044,
+            0.686
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM Lorem ipsum dolor sit amet"
+        },
+        {
+          "zone_id": "ZONE_10",
+          "role": "LABEL",
+          "bounds": [
+            8.297,
+            5.79,
+            1.138,
+            0.933
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "05"
+        },
+        {
+          "zone_id": "ZONE_5",
+          "role": "CAPTION",
+          "bounds": [
+            9.271,
+            5.983,
+            5.044,
+            0.686
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM Lorem ipsum dolor sit amet"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.749,
+            0.987,
+            3.424,
+            3.345
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "HERO_RECT",
+          "bounds": [
+            4.247,
+            0.986,
+            3.43,
+            3.345
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "HERO_RECT",
+          "bounds": [
+            4.247,
+            4.412,
+            3.43,
+            2.197
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.807,
+            4.412,
+            3.294,
+            2.197
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.749,
+            4.417,
+            3.352,
+            2.192
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content",
+        "two-column"
+      ]
+    },
+    {
+      "layout_id": "SLIDE07",
+      "source_file": "ambev.pptx",
+      "slide_index": 6,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 1
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            1.092,
+            4.148,
+            8.462,
+            1.197
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            1.092,
+            4.997,
+            11.903,
+            1.433
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            1.134,
+            6.27,
+            10.497,
+            0.628
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            7.455,
+            0.431,
+            4.702,
+            4.702
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE08",
+      "source_file": "ambev.pptx",
+      "slide_index": 7,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 3
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            1.272,
+            1.292,
+            5.377,
+            1.111
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR AMET, CONSECTETUR"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            1.272,
+            2.34,
+            5.377,
+            0.792
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "ADIPISCING SIT"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            1.272,
+            3.33,
+            5.099,
+            2.958
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            9.031,
+            0.912,
+            3.484,
+            3.484
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "HERO_RECT",
+          "bounds": [
+            7.343,
+            3.116,
+            3.905,
+            3.905
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            7.665,
+            2.177,
+            1.178,
+            1.178
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE09",
+      "source_file": "ambev.pptx",
+      "slide_index": 8,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 6,
+        "has_chart": true,
+        "has_group_clusters": true,
+        "text_density": 67,
+        "img_count": 0
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_33",
+          "role": "LABEL",
+          "bounds": [
+            0.0,
+            0.0,
+            0.961,
+            0.242
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_34",
+          "role": "LABEL",
+          "bounds": [
+            0.0,
+            0.0,
+            1.086,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_48",
+          "role": "LABEL",
+          "bounds": [
+            0.0,
+            0.0,
+            0.961,
+            0.242
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_56",
+          "role": "LABEL",
+          "bounds": [
+            0.0,
+            0.0,
+            0.961,
+            0.242
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_64",
+          "role": "LABEL",
+          "bounds": [
+            0.0,
+            0.0,
+            0.961,
+            0.242
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_30",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.157,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.020"
+        },
+        {
+          "zone_id": "ZONE_45",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.157,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.020"
+        },
+        {
+          "zone_id": "ZONE_53",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.157,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.020"
+        },
+        {
+          "zone_id": "ZONE_61",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.157,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.020"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            0.311,
+            0.249,
+            10.252,
+            0.572
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "#FFFFFF",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR"
+        },
+        {
+          "zone_id": "ZONE_35",
+          "role": "LABEL",
+          "bounds": [
+            0.0,
+            0.281,
+            1.086,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_29",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.438,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.015"
+        },
+        {
+          "zone_id": "ZONE_44",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.438,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.015"
+        },
+        {
+          "zone_id": "ZONE_52",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.438,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.015"
+        },
+        {
+          "zone_id": "ZONE_60",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.438,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.015"
+        },
+        {
+          "zone_id": "ZONE_36",
+          "role": "LABEL",
+          "bounds": [
+            0.0,
+            0.561,
+            1.086,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_66",
+          "role": "CAPTION",
+          "bounds": [
+            0.311,
+            0.71,
+            10.252,
+            0.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_28",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.718,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.010"
+        },
+        {
+          "zone_id": "ZONE_43",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.718,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.010"
+        },
+        {
+          "zone_id": "ZONE_51",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.718,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.010"
+        },
+        {
+          "zone_id": "ZONE_59",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.718,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.010"
+        },
+        {
+          "zone_id": "ZONE_37",
+          "role": "LABEL",
+          "bounds": [
+            0.0,
+            0.842,
+            1.086,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_27",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.999,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.005"
+        },
+        {
+          "zone_id": "ZONE_42",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.999,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.005"
+        },
+        {
+          "zone_id": "ZONE_50",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.999,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.005"
+        },
+        {
+          "zone_id": "ZONE_58",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            0.999,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.005"
+        },
+        {
+          "zone_id": "ZONE_38",
+          "role": "LABEL",
+          "bounds": [
+            0.0,
+            1.122,
+            1.086,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_26",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            1.279,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.000"
+        },
+        {
+          "zone_id": "ZONE_41",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            1.279,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.000"
+        },
+        {
+          "zone_id": "ZONE_49",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            1.279,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.000"
+        },
+        {
+          "zone_id": "ZONE_57",
+          "role": "LABEL",
+          "bounds": [
+            0.2,
+            1.279,
+            0.561,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.000"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            0.958,
+            1.348,
+            4.788,
+            0.25
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet"
+        },
+        {
+          "zone_id": "ZONE_12",
+          "role": "CAPTION",
+          "bounds": [
+            7.269,
+            1.348,
+            4.788,
+            0.25
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet"
+        },
+        {
+          "zone_id": "ZONE_39",
+          "role": "LABEL",
+          "bounds": [
+            0.0,
+            1.403,
+            1.086,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_31",
+          "role": "LABEL",
+          "bounds": [
+            0.177,
+            1.56,
+            0.608,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "-0.005"
+        },
+        {
+          "zone_id": "ZONE_46",
+          "role": "LABEL",
+          "bounds": [
+            0.177,
+            1.56,
+            0.608,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "-0.005"
+        },
+        {
+          "zone_id": "ZONE_54",
+          "role": "LABEL",
+          "bounds": [
+            0.177,
+            1.56,
+            0.608,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "-0.005"
+        },
+        {
+          "zone_id": "ZONE_62",
+          "role": "LABEL",
+          "bounds": [
+            0.177,
+            1.56,
+            0.608,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "-0.005"
+        },
+        {
+          "zone_id": "ZONE_40",
+          "role": "LABEL",
+          "bounds": [
+            0.0,
+            1.684,
+            1.086,
+            0.367
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_8",
+          "role": "LABEL",
+          "bounds": [
+            4.162,
+            1.684,
+            2.101,
+            0.392
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "LABEL",
+          "bounds": [
+            1.102,
+            1.795,
+            2.094,
+            0.478
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_13",
+          "role": "LABEL",
+          "bounds": [
+            6.702,
+            1.795,
+            1.907,
+            0.478
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_17",
+          "role": "LABEL",
+          "bounds": [
+            8.758,
+            1.795,
+            1.907,
+            0.478
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_21",
+          "role": "LABEL",
+          "bounds": [
+            10.813,
+            1.795,
+            1.907,
+            0.478
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_32",
+          "role": "LABEL",
+          "bounds": [
+            0.137,
+            1.827,
+            0.686,
+            0.394
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "-0.010"
+        },
+        {
+          "zone_id": "ZONE_47",
+          "role": "LABEL",
+          "bounds": [
+            0.137,
+            1.827,
+            0.686,
+            0.394
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "-0.010"
+        },
+        {
+          "zone_id": "ZONE_55",
+          "role": "LABEL",
+          "bounds": [
+            0.137,
+            1.827,
+            0.686,
+            0.394
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "-0.010"
+        },
+        {
+          "zone_id": "ZONE_63",
+          "role": "LABEL",
+          "bounds": [
+            0.137,
+            1.827,
+            0.686,
+            0.394
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "-0.010"
+        },
+        {
+          "zone_id": "ZONE_9",
+          "role": "LABEL",
+          "bounds": [
+            4.162,
+            1.964,
+            2.101,
+            0.531
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "-0.010"
+        },
+        {
+          "zone_id": "ZONE_10",
+          "role": "LABEL",
+          "bounds": [
+            4.337,
+            2.52,
+            1.851,
+            0.755
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_11",
+          "role": "LABEL",
+          "bounds": [
+            4.347,
+            3.258,
+            1.849,
+            0.755
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "LABEL",
+          "bounds": [
+            0.423,
+            3.628,
+            0.585,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "LABEL",
+          "bounds": [
+            1.138,
+            3.628,
+            0.585,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_5",
+          "role": "LABEL",
+          "bounds": [
+            1.852,
+            3.628,
+            0.585,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_6",
+          "role": "LABEL",
+          "bounds": [
+            2.567,
+            3.628,
+            0.585,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_7",
+          "role": "LABEL",
+          "bounds": [
+            3.281,
+            3.628,
+            0.585,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_14",
+          "role": "LABEL",
+          "bounds": [
+            6.748,
+            3.628,
+            0.585,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_15",
+          "role": "LABEL",
+          "bounds": [
+            7.286,
+            3.628,
+            0.585,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_16",
+          "role": "LABEL",
+          "bounds": [
+            7.83,
+            3.628,
+            0.585,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_18",
+          "role": "LABEL",
+          "bounds": [
+            8.804,
+            3.628,
+            0.585,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_19",
+          "role": "LABEL",
+          "bounds": [
+            9.341,
+            3.628,
+            0.585,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_20",
+          "role": "LABEL",
+          "bounds": [
+            9.885,
+            3.628,
+            0.585,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_22",
+          "role": "LABEL",
+          "bounds": [
+            10.859,
+            3.628,
+            0.585,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_23",
+          "role": "LABEL",
+          "bounds": [
+            11.396,
+            3.628,
+            0.585,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_24",
+          "role": "LABEL",
+          "bounds": [
+            11.941,
+            3.628,
+            0.585,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_25",
+          "role": "CAPTION",
+          "bounds": [
+            0.958,
+            4.28,
+            4.788,
+            0.25
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet"
+        },
+        {
+          "zone_id": "ZONE_65",
+          "role": "CAPTION",
+          "bounds": [
+            7.269,
+            4.28,
+            4.788,
+            0.25
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet"
+        }
+      ],
+      "image_zones": [],
+      "use_for": [
+        "cards",
+        "dashboard",
+        "chart-placeholder"
+      ]
+    },
+    {
+      "layout_id": "SLIDE10",
+      "source_file": "ambev.pptx",
+      "slide_index": 9,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": true,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 6,
+        "has_chart": true,
+        "has_group_clusters": true,
+        "text_density": 67,
+        "img_count": 0
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_0",
+          "role": "TITLE",
+          "bounds": [
+            0.261,
+            0.272,
+            10.352,
+            0.525
+          ],
+          "max_font_pt": 28.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR"
+        },
+        {
+          "zone_id": "ZONE_66",
+          "role": "CAPTION",
+          "bounds": [
+            0.261,
+            0.715,
+            10.352,
+            0.283
+          ],
+          "max_font_pt": 12.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            0.958,
+            1.363,
+            4.788,
+            0.22
+          ],
+          "max_font_pt": 12.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet"
+        },
+        {
+          "zone_id": "ZONE_12",
+          "role": "CAPTION",
+          "bounds": [
+            7.269,
+            1.363,
+            4.788,
+            0.22
+          ],
+          "max_font_pt": 12.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet"
+        },
+        {
+          "zone_id": "ZONE_8",
+          "role": "SUBTITLE",
+          "bounds": [
+            4.162,
+            1.733,
+            2.101,
+            0.292
+          ],
+          "max_font_pt": 20.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_33",
+          "role": "LABEL",
+          "bounds": [
+            1.649,
+            1.867,
+            1.224,
+            0.239
+          ],
+          "max_font_pt": 10.5,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "LABEL",
+          "bounds": [
+            1.102,
+            1.888,
+            2.094,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_13",
+          "role": "LABEL",
+          "bounds": [
+            6.702,
+            1.888,
+            1.907,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_17",
+          "role": "LABEL",
+          "bounds": [
+            8.758,
+            1.888,
+            1.907,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_21",
+          "role": "LABEL",
+          "bounds": [
+            10.813,
+            1.888,
+            1.907,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_9",
+          "role": "TITLE",
+          "bounds": [
+            4.162,
+            1.9,
+            2.101,
+            0.659
+          ],
+          "max_font_pt": 28.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "",
+          "sample_text": "-0.010"
+        },
+        {
+          "zone_id": "ZONE_48",
+          "role": "LABEL",
+          "bounds": [
+            3.841,
+            2.013,
+            1.224,
+            0.205
+          ],
+          "max_font_pt": 10.5,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_56",
+          "role": "LABEL",
+          "bounds": [
+            5.087,
+            2.013,
+            1.224,
+            0.205
+          ],
+          "max_font_pt": 10.5,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_64",
+          "role": "LABEL",
+          "bounds": [
+            6.273,
+            2.013,
+            1.224,
+            0.205
+          ],
+          "max_font_pt": 10.5,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_34",
+          "role": "LABEL",
+          "bounds": [
+            0.422,
+            2.264,
+            1.224,
+            0.239
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_30",
+          "role": "LABEL",
+          "bounds": [
+            1.932,
+            2.283,
+            0.658,
+            0.201
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.020"
+        },
+        {
+          "zone_id": "ZONE_45",
+          "role": "LABEL",
+          "bounds": [
+            4.124,
+            2.369,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.020"
+        },
+        {
+          "zone_id": "ZONE_53",
+          "role": "LABEL",
+          "bounds": [
+            5.37,
+            2.369,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.020"
+        },
+        {
+          "zone_id": "ZONE_61",
+          "role": "LABEL",
+          "bounds": [
+            6.556,
+            2.369,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.020"
+        },
+        {
+          "zone_id": "ZONE_10",
+          "role": "LABEL",
+          "bounds": [
+            4.337,
+            2.52,
+            1.851,
+            0.635
+          ],
+          "max_font_pt": 9.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_35",
+          "role": "LABEL",
+          "bounds": [
+            0.422,
+            2.689,
+            1.224,
+            0.239
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_29",
+          "role": "LABEL",
+          "bounds": [
+            1.932,
+            2.709,
+            0.658,
+            0.201
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.015"
+        },
+        {
+          "zone_id": "ZONE_44",
+          "role": "LABEL",
+          "bounds": [
+            4.124,
+            2.734,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.015"
+        },
+        {
+          "zone_id": "ZONE_52",
+          "role": "LABEL",
+          "bounds": [
+            5.37,
+            2.734,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.015"
+        },
+        {
+          "zone_id": "ZONE_60",
+          "role": "LABEL",
+          "bounds": [
+            6.556,
+            2.734,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.015"
+        },
+        {
+          "zone_id": "ZONE_43",
+          "role": "LABEL",
+          "bounds": [
+            4.124,
+            3.098,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.010"
+        },
+        {
+          "zone_id": "ZONE_51",
+          "role": "LABEL",
+          "bounds": [
+            5.37,
+            3.098,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.010"
+        },
+        {
+          "zone_id": "ZONE_59",
+          "role": "LABEL",
+          "bounds": [
+            6.556,
+            3.098,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.010"
+        },
+        {
+          "zone_id": "ZONE_36",
+          "role": "LABEL",
+          "bounds": [
+            0.422,
+            3.115,
+            1.224,
+            0.239
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_28",
+          "role": "LABEL",
+          "bounds": [
+            1.932,
+            3.134,
+            0.658,
+            0.201
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.010"
+        },
+        {
+          "zone_id": "ZONE_11",
+          "role": "LABEL",
+          "bounds": [
+            4.347,
+            3.258,
+            1.849,
+            0.592
+          ],
+          "max_font_pt": 9.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_42",
+          "role": "LABEL",
+          "bounds": [
+            4.124,
+            3.463,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.005"
+        },
+        {
+          "zone_id": "ZONE_50",
+          "role": "LABEL",
+          "bounds": [
+            5.37,
+            3.463,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.005"
+        },
+        {
+          "zone_id": "ZONE_58",
+          "role": "LABEL",
+          "bounds": [
+            6.556,
+            3.463,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.005"
+        },
+        {
+          "zone_id": "ZONE_37",
+          "role": "LABEL",
+          "bounds": [
+            0.422,
+            3.541,
+            1.224,
+            0.239
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_27",
+          "role": "LABEL",
+          "bounds": [
+            1.932,
+            3.56,
+            0.658,
+            0.201
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.005"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "LABEL",
+          "bounds": [
+            0.423,
+            3.651,
+            0.585,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0766FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "LABEL",
+          "bounds": [
+            1.138,
+            3.651,
+            0.585,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0766FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_5",
+          "role": "LABEL",
+          "bounds": [
+            1.852,
+            3.651,
+            0.585,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0766FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_6",
+          "role": "LABEL",
+          "bounds": [
+            2.567,
+            3.651,
+            0.585,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0766FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_7",
+          "role": "LABEL",
+          "bounds": [
+            3.281,
+            3.651,
+            0.585,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0766FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_14",
+          "role": "LABEL",
+          "bounds": [
+            6.748,
+            3.651,
+            0.585,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0766FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_15",
+          "role": "LABEL",
+          "bounds": [
+            7.286,
+            3.651,
+            0.585,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0766FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_16",
+          "role": "LABEL",
+          "bounds": [
+            7.83,
+            3.651,
+            0.585,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0766FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_18",
+          "role": "LABEL",
+          "bounds": [
+            8.804,
+            3.651,
+            0.585,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0766FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_19",
+          "role": "LABEL",
+          "bounds": [
+            9.341,
+            3.651,
+            0.585,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0766FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_20",
+          "role": "LABEL",
+          "bounds": [
+            9.885,
+            3.651,
+            0.585,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0766FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_22",
+          "role": "LABEL",
+          "bounds": [
+            10.859,
+            3.651,
+            0.585,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0766FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_23",
+          "role": "LABEL",
+          "bounds": [
+            11.396,
+            3.651,
+            0.585,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0766FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_24",
+          "role": "LABEL",
+          "bounds": [
+            11.941,
+            3.651,
+            0.585,
+            0.292
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0766FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_41",
+          "role": "LABEL",
+          "bounds": [
+            4.124,
+            3.827,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.000"
+        },
+        {
+          "zone_id": "ZONE_49",
+          "role": "LABEL",
+          "bounds": [
+            5.37,
+            3.827,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.000"
+        },
+        {
+          "zone_id": "ZONE_57",
+          "role": "LABEL",
+          "bounds": [
+            6.556,
+            3.827,
+            0.658,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "0.000"
+        },
+        {
+          "zone_id": "ZONE_38",
+          "role": "LABEL",
+          "bounds": [
+            0.422,
+            3.967,
+            1.224,
+            0.239
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_26",
+          "role": "LABEL",
+          "bounds": [
+            1.932,
+            3.986,
+            0.658,
+            0.201
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "",
+          "sample_text": "0.000"
+        },
+        {
+          "zone_id": "ZONE_46",
+          "role": "LABEL",
+          "bounds": [
+            4.036,
+            4.191,
+            0.833,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "-0.005"
+        },
+        {
+          "zone_id": "ZONE_54",
+          "role": "LABEL",
+          "bounds": [
+            5.282,
+            4.191,
+            0.833,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "-0.005"
+        },
+        {
+          "zone_id": "ZONE_62",
+          "role": "LABEL",
+          "bounds": [
+            6.469,
+            4.191,
+            0.833,
+            0.172
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "-0.005"
+        },
+        {
+          "zone_id": "ZONE_25",
+          "role": "CAPTION",
+          "bounds": [
+            0.958,
+            4.295,
+            4.788,
+            0.22
+          ],
+          "max_font_pt": 12.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet"
+        },
+        {
+          "zone_id": "ZONE_65",
+          "role": "CAPTION",
+          "bounds": [
+            7.269,
+            4.295,
+            4.788,
+            0.22
+          ],
+          "max_font_pt": 12.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet"
+        },
+        {
+          "zone_id": "ZONE_39",
+          "role": "LABEL",
+          "bounds": [
+            0.422,
+            4.392,
+            1.224,
+            0.239
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_31",
+          "role": "LABEL",
+          "bounds": [
+            1.845,
+            4.412,
+            0.833,
+            0.201
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "",
+          "sample_text": "-0.005"
+        },
+        {
+          "zone_id": "ZONE_47",
+          "role": "LABEL",
+          "bounds": [
+            4.036,
+            4.556,
+            0.833,
+            0.172
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "-0.010"
+        },
+        {
+          "zone_id": "ZONE_55",
+          "role": "LABEL",
+          "bounds": [
+            5.282,
+            4.556,
+            0.833,
+            0.172
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "-0.010"
+        },
+        {
+          "zone_id": "ZONE_63",
+          "role": "LABEL",
+          "bounds": [
+            6.469,
+            4.556,
+            0.833,
+            0.172
+          ],
+          "max_font_pt": 12.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "-0.010"
+        },
+        {
+          "zone_id": "ZONE_40",
+          "role": "LABEL",
+          "bounds": [
+            0.422,
+            4.818,
+            1.224,
+            0.239
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum"
+        },
+        {
+          "zone_id": "ZONE_32",
+          "role": "LABEL",
+          "bounds": [
+            1.845,
+            4.837,
+            0.833,
+            0.201
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "",
+          "sample_text": "-0.010"
+        }
+      ],
+      "image_zones": [],
+      "use_for": [
+        "cards",
+        "dashboard",
+        "chart-placeholder"
+      ]
+    },
+    {
+      "layout_id": "SLIDE11",
+      "source_file": "ambev.pptx",
+      "slide_index": 10,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 6
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            6.934,
+            1.352,
+            5.377,
+            1.133
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "LOREM IPSUM DOLOR AMET, CONSECTETUR"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            6.934,
+            2.412,
+            5.377,
+            0.792
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "ADIPISCING SIT"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            6.934,
+            3.372,
+            5.099,
+            3.018
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            -0.797,
+            0.401,
+            6.399,
+            6.399
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "HERO_RECT",
+          "bounds": [
+            3.663,
+            4.253,
+            2.286,
+            3.247
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            4.994,
+            3.125,
+            1.22,
+            4.375
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "HERO_RECT",
+          "bounds": [
+            11.149,
+            5.783,
+            2.934,
+            2.311
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "HERO_RECT",
+          "bounds": [
+            -1.502,
+            5.264,
+            5.871,
+            3.914
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_5",
+          "role": "HERO_RECT",
+          "bounds": [
+            4.196,
+            0.161,
+            2.112,
+            2.405
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE12",
+      "source_file": "ambev.pptx",
+      "slide_index": 11,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 2
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            1.092,
+            2.401,
+            8.462,
+            1.197
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            1.092,
+            3.25,
+            11.903,
+            1.433
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            1.134,
+            4.524,
+            10.497,
+            0.628
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            7.416,
+            0.816,
+            2.138,
+            2.434
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            9.461,
+            2.166,
+            1.035,
+            1.084
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE13",
+      "source_file": "ambev.pptx",
+      "slide_index": 12,
+      "layout_name": "1_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 2
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            7.37,
+            1.364,
+            5.377,
+            1.111
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR AMET, CONSECTETUR"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            7.37,
+            2.044,
+            4.366,
+            1.528
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "ADIPISCING SIT"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            7.37,
+            3.402,
+            5.099,
+            2.958
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            1.303,
+            2.243,
+            3.701,
+            5.257
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "HERO_RECT",
+          "bounds": [
+            3.847,
+            0.417,
+            1.975,
+            7.083
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE14",
+      "source_file": "ambev.pptx",
+      "slide_index": 13,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 3
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            7.989,
+            1.373,
+            4.091,
+            1.965
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            7.989,
+            2.923,
+            5.359,
+            1.965
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            7.989,
+            4.447,
+            3.952,
+            1.683
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.924,
+            0.518,
+            6.464,
+            6.464
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.465,
+            4.71,
+            2.138,
+            2.434
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            2.51,
+            6.06,
+            1.035,
+            1.084
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE15",
+      "source_file": "ambev.pptx",
+      "slide_index": 14,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": true,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 6,
+        "img_count": 5
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_4",
+          "role": "HIGHLIGHT",
+          "bounds": [
+            0.532,
+            2.862,
+            3.486,
+            1.953
+          ],
+          "max_font_pt": 66.0,
+          "font_name": "",
+          "bold": false,
+          "color": "#FFA412",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "HIGHLIGHT",
+          "bounds": [
+            5.042,
+            2.862,
+            3.486,
+            1.953
+          ],
+          "max_font_pt": 66.0,
+          "font_name": "",
+          "bold": false,
+          "color": "#EA0030",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "HIGHLIGHT",
+          "bounds": [
+            9.419,
+            2.862,
+            3.486,
+            1.953
+          ],
+          "max_font_pt": 66.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_5",
+          "role": "CAPTION",
+          "bounds": [
+            0.532,
+            4.695,
+            3.486,
+            0.742
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            5.042,
+            4.695,
+            3.486,
+            0.742
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "CAPTION",
+          "bounds": [
+            9.419,
+            4.695,
+            3.486,
+            0.742
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            2.118,
+            2.304,
+            0.264,
+            0.408
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            11.024,
+            2.306,
+            0.277,
+            0.42
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "DECO",
+          "bounds": [
+            6.559,
+            2.369,
+            0.451,
+            0.264
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content",
+        "two-column"
+      ]
+    },
+    {
+      "layout_id": "SLIDE16",
+      "source_file": "ambev.pptx",
+      "slide_index": 15,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": true,
+        "hero_images_circle": 0,
+        "cards_roundrect": 3,
+        "has_chart": false,
+        "has_group_clusters": true,
+        "text_density": 24,
+        "img_count": 5
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            0.311,
+            0.035,
+            4.317,
+            1.422
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "#FFFFFF",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            0.311,
+            1.163,
+            5.32,
+            0.469
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "LABEL",
+          "bounds": [
+            0.0,
+            1.238,
+            0.629,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_7",
+          "role": "LABEL",
+          "bounds": [
+            0.0,
+            1.238,
+            0.629,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_11",
+          "role": "LABEL",
+          "bounds": [
+            0.0,
+            1.238,
+            0.629,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "LABEL",
+          "bounds": [
+            0.578,
+            1.238,
+            0.629,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_8",
+          "role": "LABEL",
+          "bounds": [
+            0.578,
+            1.238,
+            0.629,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_12",
+          "role": "LABEL",
+          "bounds": [
+            0.578,
+            1.238,
+            0.629,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_5",
+          "role": "LABEL",
+          "bounds": [
+            1.163,
+            1.238,
+            0.629,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_9",
+          "role": "LABEL",
+          "bounds": [
+            1.163,
+            1.238,
+            0.629,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_13",
+          "role": "LABEL",
+          "bounds": [
+            1.163,
+            1.238,
+            0.629,
+            0.339
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_20",
+          "role": "CAPTION",
+          "bounds": [
+            7.892,
+            1.7,
+            5.427,
+            0.656
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_21",
+          "role": "HIGHLIGHT",
+          "bounds": [
+            8.341,
+            2.065,
+            4.529,
+            1.975
+          ],
+          "max_font_pt": 60.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "+XX%"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "LABEL",
+          "bounds": [
+            0.432,
+            2.073,
+            2.051,
+            0.478
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_6",
+          "role": "LABEL",
+          "bounds": [
+            2.945,
+            2.073,
+            2.051,
+            0.478
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_10",
+          "role": "LABEL",
+          "bounds": [
+            5.458,
+            2.073,
+            2.051,
+            0.478
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_22",
+          "role": "CAPTION",
+          "bounds": [
+            8.385,
+            3.829,
+            4.441,
+            0.946
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_23",
+          "role": "CAPTION",
+          "bounds": [
+            8.387,
+            5.001,
+            4.437,
+            0.946
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_15",
+          "role": "LABEL",
+          "bounds": [
+            0.479,
+            5.032,
+            1.957,
+            0.583
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT"
+        },
+        {
+          "zone_id": "ZONE_17",
+          "role": "LABEL",
+          "bounds": [
+            2.992,
+            5.032,
+            1.957,
+            0.583
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT"
+        },
+        {
+          "zone_id": "ZONE_19",
+          "role": "LABEL",
+          "bounds": [
+            5.505,
+            5.032,
+            1.957,
+            0.583
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT"
+        },
+        {
+          "zone_id": "ZONE_14",
+          "role": "LABEL",
+          "bounds": [
+            0.432,
+            5.616,
+            2.051,
+            0.817
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_16",
+          "role": "LABEL",
+          "bounds": [
+            2.945,
+            5.616,
+            2.051,
+            0.817
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_18",
+          "role": "LABEL",
+          "bounds": [
+            5.458,
+            5.616,
+            2.051,
+            0.817
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            1.308,
+            4.706,
+            0.299,
+            0.299
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            3.821,
+            4.706,
+            0.299,
+            0.299
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            6.334,
+            4.706,
+            0.299,
+            0.299
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content",
+        "two-column"
+      ]
+    },
+    {
+      "layout_id": "SLIDE17",
+      "source_file": "ambev.pptx",
+      "slide_index": 16,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 3
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            6.363,
+            2.988,
+            7.268,
+            1.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            6.759,
+            3.761,
+            6.865,
+            2.017
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "IPSUM"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            6.839,
+            5.464,
+            6.793,
+            0.503
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            7.424,
+            5.763,
+            1.289,
+            1.236
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.0,
+            0.393,
+            5.91,
+            5.888
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.943,
+            -0.0,
+            4.75,
+            4.736
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE18",
+      "source_file": "ambev.pptx",
+      "slide_index": 17,
+      "layout_name": "5_Slide de Título",
+      "features": {
+        "has_title": true,
+        "has_highlight": true,
+        "hero_images_circle": 0,
+        "cards_roundrect": 3,
+        "has_chart": false,
+        "has_group_clusters": true,
+        "text_density": 24,
+        "img_count": 4
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_23",
+          "role": "TITLE",
+          "bounds": [
+            0.288,
+            0.272,
+            4.661,
+            0.949
+          ],
+          "max_font_pt": 28.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#FFA412",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET CONSECTETUR"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            0.261,
+            1.166,
+            5.42,
+            0.464
+          ],
+          "max_font_pt": 12.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_19",
+          "role": "TITLE",
+          "bounds": [
+            7.892,
+            1.726,
+            5.427,
+            0.604
+          ],
+          "max_font_pt": 36.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_20",
+          "role": "HIGHLIGHT",
+          "bounds": [
+            8.341,
+            2.153,
+            4.529,
+            1.801
+          ],
+          "max_font_pt": 115.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#FFA412",
+          "sample_text": "+XX%"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "LABEL",
+          "bounds": [
+            0.432,
+            2.154,
+            2.051,
+            0.314
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_5",
+          "role": "LABEL",
+          "bounds": [
+            2.945,
+            2.154,
+            2.051,
+            0.314
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_9",
+          "role": "LABEL",
+          "bounds": [
+            5.458,
+            2.154,
+            2.051,
+            0.314
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "LABEL",
+          "bounds": [
+            6.981,
+            3.531,
+            0.591,
+            0.324
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0066FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_6",
+          "role": "LABEL",
+          "bounds": [
+            6.981,
+            3.531,
+            0.591,
+            0.324
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0066FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_10",
+          "role": "LABEL",
+          "bounds": [
+            6.981,
+            3.531,
+            0.591,
+            0.324
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0066FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "LABEL",
+          "bounds": [
+            7.524,
+            3.531,
+            0.591,
+            0.324
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0066FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_7",
+          "role": "LABEL",
+          "bounds": [
+            7.524,
+            3.531,
+            0.591,
+            0.324
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0066FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_11",
+          "role": "LABEL",
+          "bounds": [
+            7.524,
+            3.531,
+            0.591,
+            0.324
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0066FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "LABEL",
+          "bounds": [
+            8.075,
+            3.531,
+            0.591,
+            0.324
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0066FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_8",
+          "role": "LABEL",
+          "bounds": [
+            8.075,
+            3.531,
+            0.591,
+            0.324
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0066FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_12",
+          "role": "LABEL",
+          "bounds": [
+            8.075,
+            3.531,
+            0.591,
+            0.324
+          ],
+          "max_font_pt": 8.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#0066FF",
+          "sample_text": "XXXX"
+        },
+        {
+          "zone_id": "ZONE_21",
+          "role": "CAPTION",
+          "bounds": [
+            8.385,
+            3.829,
+            4.441,
+            1.005
+          ],
+          "max_font_pt": 16.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_22",
+          "role": "CAPTION",
+          "bounds": [
+            8.387,
+            5.001,
+            4.437,
+            1.005
+          ],
+          "max_font_pt": 16.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_14",
+          "role": "LABEL",
+          "bounds": [
+            0.479,
+            5.032,
+            1.957,
+            0.618
+          ],
+          "max_font_pt": 14.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#0766FF",
+          "sample_text": "LOREM IPSUM DOLOR SIT"
+        },
+        {
+          "zone_id": "ZONE_16",
+          "role": "LABEL",
+          "bounds": [
+            2.992,
+            5.032,
+            1.957,
+            0.618
+          ],
+          "max_font_pt": 14.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#0766FF",
+          "sample_text": "LOREM IPSUM DOLOR SIT"
+        },
+        {
+          "zone_id": "ZONE_18",
+          "role": "LABEL",
+          "bounds": [
+            5.505,
+            5.032,
+            1.957,
+            0.618
+          ],
+          "max_font_pt": 14.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#0766FF",
+          "sample_text": "LOREM IPSUM DOLOR SIT"
+        },
+        {
+          "zone_id": "ZONE_13",
+          "role": "LABEL",
+          "bounds": [
+            0.432,
+            5.616,
+            2.051,
+            0.85
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_15",
+          "role": "LABEL",
+          "bounds": [
+            2.945,
+            5.616,
+            2.051,
+            0.85
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_17",
+          "role": "LABEL",
+          "bounds": [
+            5.458,
+            5.616,
+            2.051,
+            0.85
+          ],
+          "max_font_pt": 10.0,
+          "font_name": "Avantt",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            1.308,
+            4.706,
+            0.299,
+            0.299
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            3.821,
+            4.706,
+            0.299,
+            0.299
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            6.334,
+            4.706,
+            0.299,
+            0.299
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content",
+        "two-column"
+      ]
+    },
+    {
+      "layout_id": "SLIDE19",
+      "source_file": "ambev.pptx",
+      "slide_index": 18,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 3
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            7.989,
+            1.373,
+            4.091,
+            1.965
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            7.989,
+            2.923,
+            5.359,
+            1.965
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            7.989,
+            4.447,
+            3.952,
+            1.683
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.924,
+            0.518,
+            6.464,
+            6.464
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "HERO_RECT",
+          "bounds": [
+            11.013,
+            0.674,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.391,
+            5.289,
+            1.697,
+            1.777
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE20",
+      "source_file": "ambev.pptx",
+      "slide_index": 19,
+      "layout_name": "5_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 5,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 18,
+        "img_count": 9
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_17",
+          "role": "CAPTION",
+          "bounds": [
+            0.438,
+            0.93,
+            12.458,
+            0.861
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_16",
+          "role": "LABEL",
+          "bounds": [
+            8.598,
+            0.973,
+            2.753,
+            0.62
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "c"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            0.438,
+            1.611,
+            12.458,
+            0.389
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "LABEL",
+          "bounds": [
+            0.494,
+            2.992,
+            1.957,
+            0.583
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "LABEL",
+          "bounds": [
+            3.096,
+            2.992,
+            1.957,
+            0.583
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_6",
+          "role": "LABEL",
+          "bounds": [
+            5.697,
+            2.992,
+            1.957,
+            0.583
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_8",
+          "role": "LABEL",
+          "bounds": [
+            8.301,
+            2.992,
+            1.957,
+            0.583
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_10",
+          "role": "LABEL",
+          "bounds": [
+            10.904,
+            2.992,
+            1.957,
+            0.583
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "LABEL",
+          "bounds": [
+            0.397,
+            3.576,
+            2.151,
+            1.583
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "LABEL",
+          "bounds": [
+            2.999,
+            3.576,
+            2.151,
+            1.583
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_5",
+          "role": "LABEL",
+          "bounds": [
+            5.6,
+            3.576,
+            2.151,
+            1.583
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_7",
+          "role": "LABEL",
+          "bounds": [
+            8.204,
+            3.576,
+            2.151,
+            1.583
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_9",
+          "role": "LABEL",
+          "bounds": [
+            10.806,
+            3.576,
+            2.151,
+            1.583
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_11",
+          "role": "LABEL",
+          "bounds": [
+            0.53,
+            5.284,
+            1.957,
+            1.172
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "01."
+        },
+        {
+          "zone_id": "ZONE_12",
+          "role": "LABEL",
+          "bounds": [
+            3.132,
+            5.284,
+            1.957,
+            1.172
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "02."
+        },
+        {
+          "zone_id": "ZONE_13",
+          "role": "LABEL",
+          "bounds": [
+            5.733,
+            5.284,
+            1.957,
+            1.172
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "03."
+        },
+        {
+          "zone_id": "ZONE_14",
+          "role": "LABEL",
+          "bounds": [
+            8.337,
+            5.284,
+            1.957,
+            1.172
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "04."
+        },
+        {
+          "zone_id": "ZONE_15",
+          "role": "LABEL",
+          "bounds": [
+            10.939,
+            5.284,
+            1.957,
+            1.172
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "05."
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            2.55,
+            3.783,
+            0.448,
+            0.448
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            5.155,
+            3.783,
+            0.448,
+            0.448
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            7.761,
+            3.783,
+            0.448,
+            0.448
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "DECO",
+          "bounds": [
+            10.366,
+            3.783,
+            0.448,
+            0.448
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "DECO",
+          "bounds": [
+            9.051,
+            2.448,
+            0.456,
+            0.456
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_5",
+          "role": "DECO",
+          "bounds": [
+            11.654,
+            2.448,
+            0.456,
+            0.456
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_6",
+          "role": "DECO",
+          "bounds": [
+            6.399,
+            2.4,
+            0.552,
+            0.552
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_7",
+          "role": "DECO",
+          "bounds": [
+            3.799,
+            2.4,
+            0.552,
+            0.552
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_8",
+          "role": "DECO",
+          "bounds": [
+            1.265,
+            2.469,
+            0.415,
+            0.415
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "cards",
+        "content",
+        "two-column"
+      ]
+    },
+    {
+      "layout_id": "SLIDE21",
+      "source_file": "ambev.pptx",
+      "slide_index": 20,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 5,
+        "img_count": 5
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            0.829,
+            1.669,
+            7.268,
+            1.697
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "CAPTION",
+          "bounds": [
+            6.198,
+            2.698,
+            5.832,
+            1.175
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            0.829,
+            2.732,
+            6.865,
+            2.017
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "IPSUM"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "CAPTION",
+          "bounds": [
+            6.201,
+            4.129,
+            5.826,
+            1.175
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            0.829,
+            4.443,
+            6.793,
+            1.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            12.715,
+            6.885,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "DECO",
+          "bounds": [
+            12.138,
+            0.187,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "HERO_RECT",
+          "bounds": [
+            5.267,
+            0.409,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content"
+      ]
+    },
+    {
+      "layout_id": "SLIDE22",
+      "source_file": "ambev.pptx",
+      "slide_index": 21,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 0,
+        "img_count": 0
+      },
+      "text_zones": [],
+      "image_zones": [],
+      "use_for": [
+        "title",
+        "section",
+        "closing"
+      ]
+    },
+    {
+      "layout_id": "SLIDE23",
+      "source_file": "ambev.pptx",
+      "slide_index": 22,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": true,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 6,
+        "img_count": 5
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_4",
+          "role": "HIGHLIGHT",
+          "bounds": [
+            0.532,
+            2.952,
+            3.486,
+            1.775
+          ],
+          "max_font_pt": 66.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#FFA412",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "HIGHLIGHT",
+          "bounds": [
+            5.042,
+            2.952,
+            3.486,
+            1.775
+          ],
+          "max_font_pt": 66.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#FFC000",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "HIGHLIGHT",
+          "bounds": [
+            9.419,
+            2.952,
+            3.486,
+            1.775
+          ],
+          "max_font_pt": 66.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_5",
+          "role": "CAPTION",
+          "bounds": [
+            0.532,
+            4.712,
+            3.486,
+            0.708
+          ],
+          "max_font_pt": 16.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            5.042,
+            4.712,
+            3.486,
+            0.708
+          ],
+          "max_font_pt": 16.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#FFC000",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "CAPTION",
+          "bounds": [
+            9.419,
+            4.712,
+            3.486,
+            0.708
+          ],
+          "max_font_pt": 16.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            2.118,
+            2.304,
+            0.264,
+            0.408
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            11.024,
+            2.306,
+            0.277,
+            0.42
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "DECO",
+          "bounds": [
+            6.559,
+            2.369,
+            0.451,
+            0.264
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content",
+        "two-column"
+      ]
+    },
+    {
+      "layout_id": "SLIDE24",
+      "source_file": "ambev.pptx",
+      "slide_index": 23,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": true,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 6,
+        "img_count": 5
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_4",
+          "role": "HIGHLIGHT",
+          "bounds": [
+            0.532,
+            2.952,
+            3.486,
+            1.775
+          ],
+          "max_font_pt": 66.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#FFA412",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "HIGHLIGHT",
+          "bounds": [
+            5.042,
+            2.952,
+            3.486,
+            1.775
+          ],
+          "max_font_pt": 66.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#FFC000",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "HIGHLIGHT",
+          "bounds": [
+            9.419,
+            2.952,
+            3.486,
+            1.775
+          ],
+          "max_font_pt": 66.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_5",
+          "role": "CAPTION",
+          "bounds": [
+            0.532,
+            4.712,
+            3.486,
+            0.708
+          ],
+          "max_font_pt": 16.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            5.042,
+            4.712,
+            3.486,
+            0.708
+          ],
+          "max_font_pt": 16.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "#FFC000",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "CAPTION",
+          "bounds": [
+            9.419,
+            4.712,
+            3.486,
+            0.708
+          ],
+          "max_font_pt": 16.0,
+          "font_name": "Avantt",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            2.118,
+            2.304,
+            0.264,
+            0.408
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            11.024,
+            2.306,
+            0.277,
+            0.42
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "DECO",
+          "bounds": [
+            6.559,
+            2.369,
+            0.451,
+            0.264
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content",
+        "two-column"
+      ]
+    },
+    {
+      "layout_id": "SLIDE25",
+      "source_file": "ambev.pptx",
+      "slide_index": 24,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 9
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            8.21,
+            1.443,
+            3.77,
+            2.733
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            8.25,
+            3.138,
+            3.675,
+            1.558
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            8.25,
+            4.931,
+            3.671,
+            1.558
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            12.715,
+            6.885,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "DECO",
+          "bounds": [
+            12.138,
+            0.187,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.749,
+            0.987,
+            3.424,
+            3.345
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_5",
+          "role": "HERO_RECT",
+          "bounds": [
+            4.247,
+            4.412,
+            3.424,
+            2.197
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_6",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.749,
+            4.412,
+            3.424,
+            2.197
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_7",
+          "role": "HERO_RECT",
+          "bounds": [
+            4.247,
+            0.986,
+            3.43,
+            3.345
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_8",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.744,
+            0.986,
+            3.43,
+            3.345
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE26",
+      "source_file": "ambev.pptx",
+      "slide_index": 25,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 1
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            7.989,
+            1.373,
+            4.091,
+            1.965
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            7.989,
+            2.923,
+            5.359,
+            1.965
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            7.989,
+            4.447,
+            3.952,
+            1.683
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.924,
+            0.518,
+            6.464,
+            6.464
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE27",
+      "source_file": "ambev.pptx",
+      "slide_index": 26,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 19
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            6.882,
+            1.83,
+            7.268,
+            1.697
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            6.882,
+            2.893,
+            6.865,
+            2.017
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "IPSUM"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            7.047,
+            4.604,
+            6.793,
+            1.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            1.837,
+            4.664,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.713,
+            3.811,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "HERO_RECT",
+          "bounds": [
+            2.55,
+            2.792,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "HERO_RECT",
+          "bounds": [
+            1.422,
+            1.834,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.298,
+            0.981,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_5",
+          "role": "HERO_RECT",
+          "bounds": [
+            2.135,
+            -0.038,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_6",
+          "role": "HERO_RECT",
+          "bounds": [
+            -1.152,
+            4.765,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_7",
+          "role": "HERO_RECT",
+          "bounds": [
+            -1.539,
+            1.815,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_8",
+          "role": "HERO_RECT",
+          "bounds": [
+            -0.439,
+            2.893,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_9",
+          "role": "HERO_RECT",
+          "bounds": [
+            -0.846,
+            -0.143,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_10",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.98,
+            -1.001,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_11",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.0,
+            5.963,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_12",
+          "role": "HERO_RECT",
+          "bounds": [
+            1.291,
+            6.732,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_13",
+          "role": "HERO_RECT",
+          "bounds": [
+            3.085,
+            5.658,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_14",
+          "role": "HERO_RECT",
+          "bounds": [
+            3.278,
+            0.867,
+            1.861,
+            2.119
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_15",
+          "role": "DECO",
+          "bounds": [
+            7.424,
+            5.763,
+            1.289,
+            1.236
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_16",
+          "role": "HERO_RECT",
+          "bounds": [
+            3.888,
+            0.0,
+            2.613,
+            3.982
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_17",
+          "role": "HERO_RECT",
+          "bounds": [
+            3.888,
+            3.982,
+            2.613,
+            1.781
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_18",
+          "role": "HERO_RECT",
+          "bounds": [
+            3.888,
+            5.723,
+            2.613,
+            1.777
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE28",
+      "source_file": "ambev.pptx",
+      "slide_index": 27,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 3,
+        "has_chart": false,
+        "has_group_clusters": true,
+        "text_density": 5,
+        "img_count": 5
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_3",
+          "role": "CAPTION",
+          "bounds": [
+            0.438,
+            0.93,
+            12.458,
+            0.861
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "CAPTION",
+          "bounds": [
+            0.438,
+            1.611,
+            12.458,
+            0.389
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "LABEL",
+          "bounds": [
+            2.559,
+            5.225,
+            2.151,
+            0.625
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "faucibus, ex mauris feugiat ante, sit am…"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "LABEL",
+          "bounds": [
+            5.586,
+            5.225,
+            2.151,
+            0.625
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "faucibus, ex mauris feugiat ante, sit am…"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "LABEL",
+          "bounds": [
+            8.624,
+            5.225,
+            2.151,
+            0.625
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "faucibus, ex mauris feugiat ante, sit am…"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "HERO_RECT",
+          "bounds": [
+            5.422,
+            2.614,
+            2.476,
+            2.433
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "HERO_RECT",
+          "bounds": [
+            8.456,
+            2.62,
+            2.486,
+            2.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "HERO_RECT",
+          "bounds": [
+            2.386,
+            2.62,
+            2.486,
+            2.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content"
+      ]
+    },
+    {
+      "layout_id": "SLIDE29",
+      "source_file": "ambev.pptx",
+      "slide_index": 28,
+      "layout_name": "1_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": true,
+        "hero_images_circle": 0,
+        "cards_roundrect": 1,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 6,
+        "img_count": 0
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            0.863,
+            0.861,
+            5.377,
+            1.022
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR AMET, CONSECTETUR"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            7.348,
+            1.619,
+            4.787,
+            1.858
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "Noka Bold",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            0.863,
+            1.927,
+            5.377,
+            0.669
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "ADIPISCING SIT"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "CAPTION",
+          "bounds": [
+            0.863,
+            3.928,
+            5.427,
+            0.656
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM"
+        },
+        {
+          "zone_id": "ZONE_5",
+          "role": "CAPTION",
+          "bounds": [
+            7.348,
+            4.282,
+            4.787,
+            1.858
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "Noka Bold",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "HIGHLIGHT",
+          "bounds": [
+            1.313,
+            4.293,
+            4.529,
+            1.975
+          ],
+          "max_font_pt": 60.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "+XX%"
+        }
+      ],
+      "image_zones": [],
+      "use_for": [
+        "content",
+        "two-column"
+      ]
+    },
+    {
+      "layout_id": "SLIDE30",
+      "source_file": "ambev.pptx",
+      "slide_index": 29,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 5,
+        "img_count": 2
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            0.829,
+            1.669,
+            7.268,
+            1.697
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "CAPTION",
+          "bounds": [
+            6.198,
+            2.698,
+            5.832,
+            1.175
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            0.829,
+            2.732,
+            6.865,
+            2.017
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "IPSUM"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "CAPTION",
+          "bounds": [
+            6.201,
+            4.129,
+            5.826,
+            1.175
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            0.829,
+            4.443,
+            6.793,
+            1.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content"
+      ]
+    },
+    {
+      "layout_id": "SLIDE31",
+      "source_file": "ambev.pptx",
+      "slide_index": 30,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 4,
+        "img_count": 6
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            4.443,
+            0.501,
+            7.268,
+            1.717
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "#0067FF",
+          "sample_text": "LOREM"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            4.443,
+            1.991,
+            4.05,
+            1.313
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "#00328D",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            5.084,
+            3.944,
+            7.259,
+            0.812
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "CAPTION",
+          "bounds": [
+            5.087,
+            5.376,
+            7.251,
+            0.812
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "#00328D",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            7.424,
+            5.763,
+            1.289,
+            1.236
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "HERO_RECT",
+          "bounds": [
+            -0.014,
+            0.0,
+            2.613,
+            3.982
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "HERO_RECT",
+          "bounds": [
+            -0.014,
+            3.982,
+            2.613,
+            1.781
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "HERO_RECT",
+          "bounds": [
+            -0.014,
+            5.723,
+            2.613,
+            1.777
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "HERO_RECT",
+          "bounds": [
+            8.409,
+            1.018,
+            2.138,
+            2.434
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_5",
+          "role": "DECO",
+          "bounds": [
+            10.453,
+            2.368,
+            1.035,
+            1.084
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content"
+      ]
+    },
+    {
+      "layout_id": "SLIDE32",
+      "source_file": "ambev.pptx",
+      "slide_index": 31,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 5,
+        "img_count": 2
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            0.829,
+            1.669,
+            7.268,
+            1.697
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "CAPTION",
+          "bounds": [
+            6.198,
+            2.698,
+            5.832,
+            1.175
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            0.829,
+            2.732,
+            6.865,
+            2.017
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "IPSUM"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "CAPTION",
+          "bounds": [
+            6.201,
+            4.129,
+            5.826,
+            1.175
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            0.829,
+            4.443,
+            6.793,
+            1.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content"
+      ]
+    },
+    {
+      "layout_id": "SLIDE33",
+      "source_file": "ambev.pptx",
+      "slide_index": 32,
+      "layout_name": "1_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 2,
+        "img_count": 3
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            0.863,
+            0.164,
+            4.975,
+            2.444
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "#2DA703",
+          "sample_text": "LOREM IPSUM DOLOR AMET, CONSECTETUR"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "BODY",
+          "bounds": [
+            0.863,
+            2.339,
+            7.435,
+            4.408
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "Noka Bold",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            9.054,
+            -0.0,
+            2.613,
+            3.982
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "HERO_RECT",
+          "bounds": [
+            9.054,
+            3.982,
+            2.613,
+            1.781
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "HERO_RECT",
+          "bounds": [
+            9.054,
+            5.723,
+            2.613,
+            1.777
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE34",
+      "source_file": "ambev.pptx",
+      "slide_index": 33,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 6
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            6.599,
+            1.722,
+            6.793,
+            1.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            6.705,
+            3.132,
+            5.832,
+            1.175
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            6.708,
+            4.563,
+            5.826,
+            1.175
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.0,
+            0.393,
+            5.91,
+            5.888
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.943,
+            -0.0,
+            4.75,
+            4.736
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "HERO_RECT",
+          "bounds": [
+            10.512,
+            0.582,
+            2.138,
+            2.434
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_5",
+          "role": "DECO",
+          "bounds": [
+            12.557,
+            1.932,
+            1.035,
+            1.084
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE35",
+      "source_file": "ambev.pptx",
+      "slide_index": 34,
+      "layout_name": "11_Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 3,
+        "img_count": 6
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            6.599,
+            1.722,
+            6.793,
+            1.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "LOREM IPSUM DOLOR SIT AMET"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            6.705,
+            3.132,
+            5.832,
+            1.175
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            6.708,
+            4.563,
+            5.826,
+            1.175
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": true,
+          "color": "",
+          "sample_text": "Lorem ipsum dolor sit amet, consectetur …"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.0,
+            0.393,
+            5.91,
+            5.888
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "HERO_RECT",
+          "bounds": [
+            0.943,
+            -0.0,
+            4.75,
+            4.736
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "HERO_RECT",
+          "bounds": [
+            10.512,
+            0.582,
+            2.138,
+            2.434
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_5",
+          "role": "DECO",
+          "bounds": [
+            12.557,
+            1.932,
+            1.035,
+            1.084
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE36",
+      "source_file": "ambev.pptx",
+      "slide_index": 35,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": true,
+        "text_density": 3,
+        "img_count": 1
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_2",
+          "role": "CAPTION",
+          "bounds": [
+            4.181,
+            -0.729,
+            7.333,
+            0.364
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "• Para alterar as cores do ícones basta …"
+        },
+        {
+          "zone_id": "ZONE_0",
+          "role": "CAPTION",
+          "bounds": [
+            0.05,
+            1.85,
+            6.582,
+            1.197
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "ÍCONES"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "CAPTION",
+          "bounds": [
+            0.05,
+            2.739,
+            6.582,
+            1.197
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "EDITÁVEIS"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            4.234,
+            -2.473,
+            4.194,
+            1.486
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE37",
+      "source_file": "ambev.pptx",
+      "slide_index": 36,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": true,
+        "text_density": 0,
+        "img_count": 0
+      },
+      "text_zones": [],
+      "image_zones": [],
+      "use_for": [
+        "title",
+        "section",
+        "closing"
+      ]
+    },
+    {
+      "layout_id": "SLIDE38",
+      "source_file": "ambev.pptx",
+      "slide_index": 37,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 0,
+        "img_count": 2
+      },
+      "text_zones": [],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            3.126,
+            2.016,
+            2.906,
+            2.906
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "HERO_RECT",
+          "bounds": [
+            6.667,
+            2.284,
+            2.638,
+            2.638
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section",
+        "closing"
+      ]
+    },
+    {
+      "layout_id": "SLIDE39",
+      "source_file": "ambev.pptx",
+      "slide_index": 38,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 0,
+        "img_count": 3
+      },
+      "text_zones": [],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            2.501,
+            2.385,
+            2.558,
+            2.558
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "HERO_RECT",
+          "bounds": [
+            5.813,
+            2.613,
+            2.224,
+            2.33
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "HERO_RECT",
+          "bounds": [
+            8.791,
+            2.59,
+            2.224,
+            2.32
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE40",
+      "source_file": "ambev.pptx",
+      "slide_index": 39,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 0,
+        "img_count": 12
+      },
+      "text_zones": [],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            1.811,
+            2.059,
+            1.406,
+            1.406
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            3.522,
+            2.257,
+            1.167,
+            1.01
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            5.049,
+            2.277,
+            1.135,
+            0.99
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "DECO",
+          "bounds": [
+            6.923,
+            2.059,
+            1.406,
+            1.406
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "DECO",
+          "bounds": [
+            8.713,
+            2.257,
+            1.167,
+            1.01
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_5",
+          "role": "DECO",
+          "bounds": [
+            10.264,
+            2.313,
+            1.135,
+            0.99
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_6",
+          "role": "HERO_RECT",
+          "bounds": [
+            1.769,
+            4.098,
+            1.51,
+            1.51
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_7",
+          "role": "DECO",
+          "bounds": [
+            3.678,
+            4.369,
+            1.01,
+            0.969
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_8",
+          "role": "DECO",
+          "bounds": [
+            5.121,
+            4.369,
+            0.99,
+            0.938
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_9",
+          "role": "HERO_RECT",
+          "bounds": [
+            6.875,
+            4.098,
+            1.51,
+            1.51
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_10",
+          "role": "DECO",
+          "bounds": [
+            8.791,
+            4.369,
+            1.01,
+            0.969
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_11",
+          "role": "DECO",
+          "bounds": [
+            10.264,
+            4.369,
+            0.99,
+            0.938
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE41",
+      "source_file": "ambev.pptx",
+      "slide_index": 40,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 0,
+        "img_count": 3
+      },
+      "text_zones": [],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "HERO_RECT",
+          "bounds": [
+            2.534,
+            2.413,
+            2.458,
+            2.458
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "HERO_RECT",
+          "bounds": [
+            5.819,
+            2.685,
+            1.901,
+            1.915
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "HERO_RECT",
+          "bounds": [
+            8.547,
+            2.686,
+            1.901,
+            1.914
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "title",
+        "section"
+      ]
+    },
+    {
+      "layout_id": "SLIDE42",
+      "source_file": "ambev.pptx",
+      "slide_index": 41,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 5,
+        "img_count": 8
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_0",
+          "role": "LABEL",
+          "bounds": [
+            0.858,
+            4.413,
+            1.66,
+            0.489
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "POR MAIS RAZÕES PRA BRINDAR"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "LABEL",
+          "bounds": [
+            3.617,
+            4.413,
+            1.105,
+            0.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "DESDE 1885"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "LABEL",
+          "bounds": [
+            5.747,
+            4.413,
+            1.84,
+            0.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "ORIGINAL DO BRASIL"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "LABEL",
+          "bounds": [
+            8.449,
+            4.413,
+            1.457,
+            0.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "SONHA GRANDE"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "LABEL",
+          "bounds": [
+            10.89,
+            4.413,
+            1.491,
+            0.489
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "EM CADA CANTO DO BRASIL"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "DECO",
+          "bounds": [
+            8.62,
+            2.984,
+            1.115,
+            0.667
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "DECO",
+          "bounds": [
+            10.971,
+            2.984,
+            1.344,
+            0.767
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_5",
+          "role": "DECO",
+          "bounds": [
+            3.759,
+            2.947,
+            0.822,
+            0.537
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_6",
+          "role": "DECO",
+          "bounds": [
+            1.32,
+            2.744,
+            0.736,
+            1.034
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_7",
+          "role": "DECO",
+          "bounds": [
+            6.256,
+            2.744,
+            0.822,
+            1.243
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content"
+      ]
+    },
+    {
+      "layout_id": "SLIDE43",
+      "source_file": "ambev.pptx",
+      "slide_index": 42,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 5,
+        "img_count": 8
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_0",
+          "role": "LABEL",
+          "bounds": [
+            0.858,
+            4.413,
+            1.66,
+            0.489
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "POR MAIS RAZÕES PRA BRINDAR"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "LABEL",
+          "bounds": [
+            3.617,
+            4.413,
+            1.105,
+            0.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "DESDE 1885"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "LABEL",
+          "bounds": [
+            5.747,
+            4.413,
+            1.84,
+            0.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "ORIGINAL DO BRASIL"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "LABEL",
+          "bounds": [
+            8.449,
+            4.413,
+            1.457,
+            0.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "SONHA GRANDE"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "LABEL",
+          "bounds": [
+            10.89,
+            4.413,
+            1.491,
+            0.489
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "EM CADA CANTO DO BRASIL"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "DECO",
+          "bounds": [
+            8.62,
+            2.984,
+            1.115,
+            0.667
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "DECO",
+          "bounds": [
+            10.971,
+            2.984,
+            1.344,
+            0.767
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_5",
+          "role": "DECO",
+          "bounds": [
+            3.759,
+            2.947,
+            0.822,
+            0.537
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_6",
+          "role": "DECO",
+          "bounds": [
+            1.32,
+            2.744,
+            0.736,
+            1.034
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_7",
+          "role": "DECO",
+          "bounds": [
+            6.256,
+            2.744,
+            0.822,
+            1.243
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content"
+      ]
+    },
+    {
+      "layout_id": "SLIDE44",
+      "source_file": "ambev.pptx",
+      "slide_index": 43,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 5,
+        "img_count": 8
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_0",
+          "role": "LABEL",
+          "bounds": [
+            0.858,
+            4.413,
+            1.66,
+            0.489
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "POR MAIS RAZÕES PRA BRINDAR"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "LABEL",
+          "bounds": [
+            3.617,
+            4.413,
+            1.105,
+            0.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "DESDE 1885"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "LABEL",
+          "bounds": [
+            5.747,
+            4.413,
+            1.84,
+            0.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "ORIGINAL DO BRASIL"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "LABEL",
+          "bounds": [
+            8.449,
+            4.413,
+            1.457,
+            0.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "SONHA GRANDE"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "LABEL",
+          "bounds": [
+            10.89,
+            4.413,
+            1.491,
+            0.489
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "EM CADA CANTO DO BRASIL"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "DECO",
+          "bounds": [
+            8.62,
+            2.984,
+            1.115,
+            0.667
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "DECO",
+          "bounds": [
+            10.971,
+            2.984,
+            1.344,
+            0.767
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_5",
+          "role": "DECO",
+          "bounds": [
+            3.759,
+            2.947,
+            0.822,
+            0.537
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_6",
+          "role": "DECO",
+          "bounds": [
+            1.32,
+            2.744,
+            0.736,
+            1.034
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_7",
+          "role": "DECO",
+          "bounds": [
+            6.256,
+            2.744,
+            0.822,
+            1.243
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content"
+      ]
+    },
+    {
+      "layout_id": "SLIDE45",
+      "source_file": "ambev.pptx",
+      "slide_index": 44,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 5,
+        "img_count": 8
+      },
+      "text_zones": [
+        {
+          "zone_id": "ZONE_0",
+          "role": "LABEL",
+          "bounds": [
+            0.858,
+            4.413,
+            1.66,
+            0.489
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "POR MAIS RAZÕES PRA BRINDAR"
+        },
+        {
+          "zone_id": "ZONE_1",
+          "role": "LABEL",
+          "bounds": [
+            3.617,
+            4.413,
+            1.105,
+            0.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "DESDE 1885"
+        },
+        {
+          "zone_id": "ZONE_2",
+          "role": "LABEL",
+          "bounds": [
+            5.747,
+            4.413,
+            1.84,
+            0.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "ORIGINAL DO BRASIL"
+        },
+        {
+          "zone_id": "ZONE_3",
+          "role": "LABEL",
+          "bounds": [
+            8.449,
+            4.413,
+            1.457,
+            0.294
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "SONHA GRANDE"
+        },
+        {
+          "zone_id": "ZONE_4",
+          "role": "LABEL",
+          "bounds": [
+            10.89,
+            4.413,
+            1.491,
+            0.489
+          ],
+          "max_font_pt": 0.0,
+          "font_name": "",
+          "bold": false,
+          "color": "",
+          "sample_text": "EM CADA CANTO DO BRASIL"
+        }
+      ],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "DECO",
+          "bounds": [
+            12.586,
+            6.775,
+            0.488,
+            0.504
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_2",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_3",
+          "role": "DECO",
+          "bounds": [
+            8.62,
+            2.984,
+            1.115,
+            0.667
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_4",
+          "role": "DECO",
+          "bounds": [
+            10.971,
+            2.984,
+            1.344,
+            0.767
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_5",
+          "role": "DECO",
+          "bounds": [
+            3.759,
+            2.947,
+            0.822,
+            0.537
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_6",
+          "role": "DECO",
+          "bounds": [
+            1.32,
+            2.744,
+            0.736,
+            1.034
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_7",
+          "role": "DECO",
+          "bounds": [
+            6.256,
+            2.744,
+            0.822,
+            1.243
+          ],
+          "crop": "rect",
+          "is_background": false
+        }
+      ],
+      "use_for": [
+        "content"
+      ]
+    },
+    {
+      "layout_id": "SLIDE46",
+      "source_file": "ambev.pptx",
+      "slide_index": 45,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 0,
+        "img_count": 2
+      },
+      "text_zones": [],
+      "image_zones": [
+        {
+          "zone_id": "IMG_0",
+          "role": "DECO",
+          "bounds": [
+            12.03,
+            0.246,
+            0.936,
+            0.277
+          ],
+          "crop": "rect",
+          "is_background": false
+        },
+        {
+          "zone_id": "IMG_1",
+          "role": "BACKGROUND",
+          "bounds": [
+            0.2,
+            0.113,
+            11.361,
+            7.275
+          ],
+          "crop": "full",
+          "is_background": true
+        }
+      ],
+      "use_for": [
+        "title",
+        "section",
+        "closing"
+      ]
+    },
+    {
+      "layout_id": "SLIDE47",
+      "source_file": "ambev.pptx",
+      "slide_index": 46,
+      "layout_name": "Slide de Título",
+      "features": {
+        "has_title": false,
+        "has_highlight": false,
+        "hero_images_circle": 0,
+        "cards_roundrect": 0,
+        "has_chart": false,
+        "has_group_clusters": false,
+        "text_density": 0,
+        "img_count": 0
+      },
+      "text_zones": [],
+      "image_zones": [],
+      "use_for": [
+        "title",
+        "section",
+        "closing"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "template-01",
+  "name": "Apresentação Corporativa",
+  "scope": "global",
+  "palette": {
+    "primary": "#003087",
+    "secondary": "#E31837",
+    "accent": "#FFB81C",
+    "background": "#FFFFFF",
+    "text": "#1A1A1A"
+  },
+  "layouts": ["title", "content", "two-column", "chart-placeholder", "image-text", "closing"],
+  "font_title": "Calibri",
+  "font_body": "Calibri"
+}
