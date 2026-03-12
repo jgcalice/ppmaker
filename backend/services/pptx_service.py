@@ -412,9 +412,30 @@ def _draw_slide(slide, slide_data, palette: dict, font_name: str,
 
 def _find_stencil_file(template_path: str) -> str | None:
     """
-    Look for any .pptx file in ../../template_padrao/local/example/ relative
-    to template_path.  Returns the first match, or None.
+    Resolve stencil .pptx path with explicit priority order.
+
+    Priority:
+      1) PPTX_STENCIL_PATH env var, when set and points to an existing file.
+      2) `Template Ambev_atualizado_ - Copia.pptx` in template_padrao/local/example/.
+      3) Generic .pptx search in the same folder, excluding generated outputs.
+
+    Returns absolute path or None when nothing valid is found.
     """
+    configured_path = os.getenv("PPTX_STENCIL_PATH")
+    if configured_path:
+        configured_abs = os.path.abspath(configured_path)
+        if os.path.isfile(configured_abs):
+            logger.info(
+                "Using stencil file: %s (rule=PPTX_STENCIL_PATH)",
+                configured_abs,
+            )
+            return configured_abs
+
+        logger.warning(
+            "Configured PPTX_STENCIL_PATH does not exist or is not a file: %s",
+            configured_abs,
+        )
+
     template_dir = os.path.dirname(os.path.abspath(template_path))
     example_dir  = os.path.normpath(
         os.path.join(template_dir, "..", "..", "template_padrao", "local", "example")
@@ -431,11 +452,31 @@ def _find_stencil_file(template_path: str) -> str | None:
         return None
 
     import glob as _glob
-    pptx_files = sorted(_glob.glob(os.path.join(example_dir, "*.pptx")))
-    if pptx_files:
-        logger.debug("Found stencil: %s", pptx_files[0])
-        return pptx_files[0]
+    preferred_name = "Template Ambev_atualizado_ - Copia.pptx"
+    preferred_path = os.path.join(example_dir, preferred_name)
+    if os.path.isfile(preferred_path):
+        preferred_abs = os.path.abspath(preferred_path)
+        logger.info(
+            "Using stencil file: %s (rule=preferred_filename)",
+            preferred_abs,
+        )
+        return preferred_abs
 
+    ignored_patterns = ("presentation_output", "test")
+    all_pptx_files = sorted(_glob.glob(os.path.join(example_dir, "*.pptx")))
+    pptx_files = [
+        path for path in all_pptx_files
+        if not os.path.basename(path).lower().startswith(ignored_patterns)
+    ]
+    if pptx_files:
+        chosen_abs = os.path.abspath(pptx_files[0])
+        logger.info(
+            "Using stencil file: %s (rule=generic_search_excluding_generated)",
+            chosen_abs,
+        )
+        return chosen_abs
+
+    logger.debug("No stencil file found in %s after applying ignore patterns", example_dir)
     return None
 
 
