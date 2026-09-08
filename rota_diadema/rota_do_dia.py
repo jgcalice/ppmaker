@@ -106,6 +106,8 @@ def main():
     ap.add_argument("--raio-pe", type=float, default=0.6)
     ap.add_argument("--modo", choices=("filtro", "bonus"), default="bonus",
                     help="filtro: so PDVs do dia. bonus: todos, com preferencia pelo dia")
+    ap.add_argument("--excluir", default=None,
+                    help="CSV(s) separados por virgula com PDVs ja visitados, a excluir")
     ap.add_argument("--peso-dia", type=float, default=0.35,
                     help="o quanto o PDV do dia vale de desconto no custo de inseri-lo")
     ap.add_argument("--saida", default="saida")
@@ -116,6 +118,17 @@ def main():
     destino = tuple(float(x) for x in args.destino.split(","))
     todos = br.carrega_base(args.html, args.unb)
     alvo = normaliza(args.dia)
+    if args.excluir:
+        feitos = set()
+        for caminho in args.excluir.split(","):
+            with open(caminho.strip(), encoding="utf-8-sig") as fh:
+                for l in csv.DictReader(fh):
+                    feitos.add((l["nome"], round(float(l["lat"]), 6)))
+        antes = len(todos)
+        todos = [p for p in todos
+                 if (p["name"], round(p["lat"], 6)) not in feitos]
+        print("excluidos %d PDVs ja visitados (%d -> %d)"
+              % (antes - len(todos), antes, len(todos)))
     casa_dia = [normaliza(p["melhor_dia_semana"]) == alvo for p in todos]
     if args.modo == "filtro":
         pdvs = [p for p, c in zip(todos, casa_dia) if c]
