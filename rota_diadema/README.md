@@ -71,16 +71,33 @@ cabeçalho do app dizer 8 operações, e não 9.
 |---|---|
 | `rota_otimizada.csv` | 1.459 linhas na ordem da rota: ordem, bolsão, modo de chegada, nome, endereço, cidade, lat/lon, telefone, setor, id_vd, melhor dia |
 | `bolsoes.csv` | 1 linha por bolsão: onde estacionar, quantos PDVs, km do circuito a pé |
-| `mymaps_completo.csv` | importável no Google My Maps (nome já prefixado com a ordem) |
+| `rota_mymaps.kml` | **importação num clique no My Maps** — pinos na ordem, cores por modo, linha do trajeto e campos prontos para estilizar |
+| `mymaps_completo.csv` | mesma coisa em CSV (pede o passo de escolher as colunas de latitude/longitude) |
 | `mymaps_setor_<s>.csv` | idem, um por setor — útil porque o My Maps só aceita 10 camadas |
 | `links_google_maps.md` | links `maps/dir/` prontos: blocos de carro entre bolsões + um circuito a pé por bolsão |
 
 ### Importar no Google My Maps
 
+Pelo KML (recomendado, sem tela de mapeamento de colunas):
+
 1. <https://mymaps.google.com> → **Criar novo mapa** → **Importar**
-2. Suba `mymaps_completo.csv` (ou um `mymaps_setor_*.csv`)
-3. Colunas de posição: `Latitude` e `Longitude`; título do marcador: `Nome`
-4. Estilize por `Setor`, `Melhor dia` ou `Bolsao`
+2. Suba `rota_mymaps.kml`
+
+Vêm duas camadas: `PDVs na ordem da rota` (1.460 pinos — vermelho onde estacionar,
+verde para as paradas a pé) e `Trajeto de carro` (a linha ligando os bolsões).
+
+Pelo CSV, se preferir: suba `mymaps_completo.csv`, marque `Latitude` e `Longitude`
+como posição e `Nome` como título do marcador.
+
+Em qualquer um dos dois, dá para estilizar por `Setor`, `Melhor dia` ou `Bolsao`.
+
+**No iPhone:** o My Maps não tem app de iOS — a importação é feita no computador.
+Depois, no app do Google Maps logado na mesma conta: aba **Salvos** (ou **Você**)
+→ **Mapas** → seu mapa. Ele exibe os pinos, mas não navega parada a parada; para
+navegar, use os links de `links_google_maps.md`, que abrem direto no app.
+
+Limites do My Maps: 10 camadas, 2.000 feições por camada, 10.000 no total. O KML
+tem 1.461 feições, então cabe.
 
 O My Maps plota os pontos mas **não traça nem otimiza rota** — a ordem já vem
 resolvida no nome (`0001 - ...`) e nos links de `links_google_maps.md`.

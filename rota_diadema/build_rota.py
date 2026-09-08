@@ -127,6 +127,62 @@ def resolve(coords, origem, fim=None):
     return _dois_opt(_vizinho_mais_proximo(coords, origem), coords, origem, fim)
 
 
+def _xml(t):
+    return (str(t).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+            .replace('"', "&quot;"))
+
+
+def escreve_kml(caminho, linhas, bolsoes, origem, rotulo_origem, titulo):
+    """KML para importar no Google My Maps em um clique.
+
+    Duas pastas = duas camadas: os PDVs (com ExtendedData, que o My Maps vira
+    coluna e permite estilizar por setor/dia) e a linha do trajeto de carro.
+    """
+    campos = [("Ordem", "ordem"), ("Bolsao", "bolsao"), ("Modo", "modo"),
+              ("Setor", "setor"), ("Cidade", "cidade"), ("Melhor dia", "melhor_dia"),
+              ("Telefone", "telefone"), ("Endereco", "endereco"), ("id_vd", "id_vd")]
+    p = ['<?xml version="1.0" encoding="UTF-8"?>',
+         '<kml xmlns="http://www.opengis.net/kml/2.2"><Document>',
+         "<name>%s</name>" % _xml(titulo),
+         '<Style id="parar"><IconStyle><color>ff0000ff</color><scale>1.1</scale>'
+         '<Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>'
+         "</IconStyle></Style>",
+         '<Style id="andar"><IconStyle><color>ff00aa00</color><scale>0.9</scale>'
+         '<Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href></Icon>'
+         "</IconStyle></Style>",
+         '<Style id="linha"><LineStyle><color>ffff6414</color><width>3</width></LineStyle></Style>',
+         "<Folder><name>PDVs na ordem da rota</name>",
+         "<Placemark><name>0000 - ORIGEM</name><description>%s</description>"
+         "<Point><coordinates>%s,%s,0</coordinates></Point></Placemark>"
+         % (_xml(rotulo_origem), origem[1], origem[0])]
+    for l in linhas:
+        p.append("<Placemark><name>%04d - %s</name><styleUrl>#%s</styleUrl>"
+                 % (l["ordem"], _xml(l["nome"]),
+                    "andar" if l["modo"] == "a pe" else "parar"))
+        p.append("<description>%s%s | setor %s | %s | bolsao %d</description>"
+                 % (_xml(l["endereco"]),
+                    " | tel " + _xml(l["telefone"]) if l["telefone"] else "",
+                    _xml(l["setor"]), _xml(l["melhor_dia"]), l["bolsao"]))
+        p.append("<ExtendedData>")
+        for rotulo, chave in campos:
+            p.append("<Data name=\"%s\"><value>%s</value></Data>"
+                     % (rotulo, _xml(l[chave])))
+        p.append("</ExtendedData>")
+        p.append("<Point><coordinates>%s,%s,0</coordinates></Point></Placemark>"
+                 % (l["lon"], l["lat"]))
+    p.append("</Folder>")
+    p.append("<Folder><name>Trajeto de carro</name><Placemark>"
+             "<name>Trajeto entre bolsoes</name><styleUrl>#linha</styleUrl><LineString>"
+             "<tessellate>1</tessellate><coordinates>")
+    p.append(" ".join(["%s,%s,0" % (origem[1], origem[0])]
+                      + ["%s,%s,0" % (b["estacionar_lon"], b["estacionar_lat"])
+                         for b in bolsoes]))
+    p.append("</coordinates></LineString></Placemark></Folder>")
+    p.append("</Document></kml>")
+    with open(caminho, "w", encoding="utf-8") as fh:
+        fh.write("\n".join(p))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--html", required=True)
@@ -232,6 +288,8 @@ def main():
                             l["melhor_dia"], l["ordem"], l["bolsao"], l["modo"]])
 
     escreve_mymaps("mymaps_completo.csv", linhas)
+    escreve_kml(os.path.join(args.saida, "rota_mymaps.kml"), linhas, bolsoes_out,
+                origem, args.rotulo_origem, "Rota otimizada - UNB %s" % args.unb)
     por_setor = defaultdict(list)
     for l in linhas:
         por_setor[l["setor"]].append(l)
