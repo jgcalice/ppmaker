@@ -155,7 +155,7 @@ def main():
         p = pdvs[j]
         atual = coords[j]
         cam = 0.0 if anterior is None else H(anterior, atual) * br.FATOR_RUA
-        acum += cam * min_por_km_pe / br.FATOR_RUA + args.t_visita
+        acum += H(anterior, atual) * min_por_km_pe + args.t_visita if anterior else args.t_visita
         detalhe.append({"parada": k, "chega_min": round(acum - args.t_visita),
                         "sai_min": round(acum), "caminhada_m": round(cam * 1000),
                         "nome": p["name"], "endereco": p["address_complete"],
