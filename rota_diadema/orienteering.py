@@ -81,6 +81,8 @@ def main():
     ap.add_argument("--conversao", type=float, default=0.10)
     ap.add_argument("--v-pe", type=float, default=4.5)
     ap.add_argument("--v-carro", type=float, default=22.0)
+    ap.add_argument("--max-carro", type=float, default=None,
+                    help="minutos: teto de deslocamento de carro desde a origem")
     ap.add_argument("--sementes", type=int, default=60,
                     help="quantos pontos de partida refinar com o solver")
     ap.add_argument("--saida", default="saida")
@@ -99,6 +101,8 @@ def main():
     for i in range(len(pdvs)):
         tcar = H(origem, coords[i]) * mpk_carro
         if tcar >= args.minutos - args.t_visita:
+            continue
+        if args.max_carro is not None and tcar > args.max_carro:
             continue
         o, _ = hs.rota_gulosa(i, coords, grade, (), args.minutos - tcar,
                               args.t_visita, mpk)
