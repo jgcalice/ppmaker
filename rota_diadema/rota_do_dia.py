@@ -173,6 +173,7 @@ def main():
                        "cidade": p["city"],
                        "telefone": p["nationalPhoneNumber"] or "-",
                        "setor": p["setor"], "melhor_dia": p["melhor_dia_semana"],
+                       "e_hoje": "SIM" if do_dia[j] else "",
                        "min_ate_o_destino": round(H(coords[j], destino) * mpk_car),
                        "lat": p["lat"], "lon": p["lon"],
                        "link": "https://www.google.com/maps/search/?api=1&query=%s,%s"
