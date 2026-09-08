@@ -11,13 +11,14 @@ página e filtra pela UNB.
 
 | Nível | PDVs |
 |---|---|
-| Base inteira do site (9 CDDs) | 7.096 |
+| Base inteira do site (8 operações, 58 setores) | 7.096 |
 | **CDD Diadema — UNB 216** (usado aqui) | **1.459** |
 | Só o município de Diadema | 123 |
 
 O CDD Diadema atende São Paulo zona sul (746), Santo André (295), São Bernardo do
 Campo (283), Diadema (123), São Caetano do Sul (10) e 2 registros sem cidade.
 O mapeamento `216 → CDD Diadema` vem da própria função `operacaoDe()` do site.
+Os números conferem com o que o app mostra na tela: `1459 PDV(s) exibido(s) de 7096`.
 
 ## Modelo de rota (híbrido: carro entre bolsões, a pé dentro)
 
@@ -54,8 +55,11 @@ python3 build_rota.py \
 O `=` em `--origem=` é obrigatório: sem ele o `-23...` é lido como nome de opção.
 
 Opções: `--raio-bolsao` (km, padrão 0.15), `--max-pdv-bolsao` (padrão 8),
-`--unb` (216 Diadema, 301 Mauá, 401 Mooca/Capital, 538 Jacarepaguá, 541 Santa
-Luzia, 71 Salvador, 352 Fortaleza, 710 Brasília, 928 Blumenau).
+`--unb`. UNBs presentes na base: 216 Diadema, 301 Mauá, 401 Mooca/Capital
+(divide pelo setor: <500 Mooca, >=500 Capital), 538 Jacarepaguá, 541 Santa Luzia,
+710 Brasília, 928 Blumenau. A função `operacaoDe()` do site também define 71
+Salvador e 352 Fortaleza, mas nenhum PDV da base pertence a essas duas — daí o
+cabeçalho do app dizer 8 operações, e não 9.
 
 ## Saídas
 
