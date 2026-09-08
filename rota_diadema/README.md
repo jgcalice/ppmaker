@@ -41,6 +41,10 @@ O ótimo é raso (100–200 m) e o ganho sobre a rota só de carro é de ~8%.
 
 ## Como rodar
 
+O jeito curto: `./gerar.sh` (já com a origem configurada).
+
+O jeito longo:
+
 ```bash
 git clone --depth 1 https://github.com/carlosorledo/mapa-rota /tmp/mapa-rota
 
@@ -80,6 +84,23 @@ cabeçalho do app dizer 8 operações, e não 9.
 
 O My Maps plota os pontos mas **não traça nem otimiza rota** — a ordem já vem
 resolvida no nome (`0001 - ...`) e nos links de `links_google_maps.md`.
+
+## A origem
+
+`R. das Hortências, 841 - Jardim do Estádio, Santo André - SP` → `-23.683943,-46.516692`.
+
+Não há geocoder disponível no ambiente, então a coordenada foi interpolada a partir
+de 4 PDVs da própria base na mesma rua:
+
+| Nº | Coordenada |
+|---|---|
+| 585 | -23.6816568, -46.5162634 |
+| 721 | -23.6829281, -46.516739 |
+| 892 | -23.6843747, -46.5166723 |
+| 906 | -23.6844634, -46.5167158 |
+
+A numeração é linear (0,77–1,10 m por número ao longo de toda a rua), o que dá
+uma margem de erro de ~20 m. O nº 841 cai a 113 m do 721 e 48 m do 892.
 
 ## Limitações conhecidas
 
